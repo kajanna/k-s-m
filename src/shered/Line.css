@@ -1,0 +1,7 @@
+.line__line {
+    height: 3px;
+    width: 70%;
+    z-index: 5;
+    background-color: white;
+    border-radius: 2px;
+}
