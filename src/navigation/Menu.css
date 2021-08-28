@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu li {
+    font-size: larger;
+    list-style-type: none;
+    margin-bottom: 16%;
+    color: var(--brown);
+    padding: 4px 8px;
+    border: 3px solid transparent
+}
+.menu li:hover {
+    cursor: pointer;
+    color: #fff;
+    border: 3px solid#fff;;
+}
+
+@media (min-width: 986px) {
+    .menu {
+        flex-direction: row;
+    }
+    .menu li {
+        display: inline;
+        margin-left: 16%;
+        font-size:x-large;
+        color: #fff
+    }
+}

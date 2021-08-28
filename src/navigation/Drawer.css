@@ -1,0 +1,9 @@
+.drawer {
+    z-index: 100;
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 30%;
+    box-shadow: var(--shadow);
+    padding: 32px;
+}

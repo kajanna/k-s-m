@@ -3,8 +3,22 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+:root {
+    --beige: #D1C3B2;
+    --grey: #808080;
+    --pink: #BD9781;
+    --brown: #7D5A50;
+    --shadow: 9px 0px 8px rgb(36, 4, 4, 0.3);
+    --text--color: #fff
+}
+.text-brown {
+    color: var(--brown);
+}
+.text-grey {
+    color: var(--grey);
+}
 .main {
-    width:100%;
+    width:100vh;
     height:100vh;
 }
 
