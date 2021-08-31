@@ -1,18 +1,9 @@
 .main-navigation {
     width: 100%;
-    background-color: transparent;
     z-index: 10;
     position: fixed;
     margin: 0;
 }
-.main-navigation.active {
-    background-color: var(--beige);
-    box-shadow: var(--shadow);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top left;
-}
-
 .main-navigation__nav-bar {
     margin: 24px;
     display: flex;

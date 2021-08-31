@@ -1,0 +1,28 @@
+.animated-nav-bar {
+    width: 100%;
+    z-index: -5;
+    background-color: var(--beige);
+    box-shadow: none;
+    transform: translateY(-100%);
+    position: fixed;
+    margin: 0;
+    height: 5rem;
+}
+.animated-nav-bar__blob {
+    background-image: url('../assets/shape_main.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: 1% 2%;
+    width: 7rem;
+    height: 7rem;
+    z-index: 2;
+    display: none;
+}
+@media (min-width: 986px) {
+    .animated-nav-bar {
+        height: 10rem;
+    }
+    .animated-nav-bar__blob {
+        display: block;
+    } 
+}

@@ -1,9 +1,18 @@
 .drawer {
-    z-index: 100;
+    z-index: 30;
     position: absolute;
     background-color: #fff;
+    padding: 2rem;
     height: 100%;
     width: 30%;
-    box-shadow: var(--shadow);
-    padding: 32px;
+    box-shadow: none;
+    transform: translate(-130%)
+}
+.drawer__menu {
+    opacity: 0
+}
+@media (min-width: 750px) {
+    .drawer {
+        width: 15%;
+    }
 }

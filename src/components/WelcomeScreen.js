@@ -1,24 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
+
 import './WelcomeScreen.css';
 
 function WelcomeScreen(props) {
   const openingTl = useRef();
   useEffect(() => {
     openingTl.current = gsap.timeline({})
-/*       .from('.welcome__background', {
-        duration: 1,
-        marginLeft: '100%',
-        width: "0%",
-        ease: "slow"
-      }) */
       .from('.welcome__text', {
         duration: 1,
         marginLeft: '140%',
         ease: "slow"
       })
       .from('.welcome__blob', {
-        duration: 1,
+        duration: 0.3,
         scaleX: 0,
         scaleY: 0
       })
