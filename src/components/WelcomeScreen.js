@@ -5,8 +5,9 @@ import './WelcomeScreen.css';
 
 function WelcomeScreen(props) {
   const openingTl = useRef();
+
   useEffect(() => {
-    openingTl.current = gsap.timeline({})
+    openingTl.current = gsap.timeline()
       .from('.welcome__text', {
         duration: 1,
         marginLeft: '140%',

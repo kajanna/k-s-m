@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import  { gsap } from 'gsap';
+
 import './Line.css'
 
 function Line(props) {
+
+    const lineRef = useRef();
+
     return (
-        <div className="line">
-        <div className="line__line"></div>
-        </div>
+        <div className="line" ></div>
+
     );
 }
 
