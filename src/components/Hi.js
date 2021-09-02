@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
-import Line from '../shered/Line'
+import Line from '../shered/Line';
+import Card from '../shered/Card';
 
 import './Hi.css'
 
 function AboutMe(props) {
+  const hiTextRef = useRef();
+
   return (
     <div className="about-me">
       <Line />
+      
       <div className="about-me__content">
+      <Card>
         <h2>Hi!</h2>
-        <p>
+        <p ref={hiTextRef}>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,7 +24,9 @@ function AboutMe(props) {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
         </p>
+        </Card>
       </div>
+      
       <Line />
     </div>
   );

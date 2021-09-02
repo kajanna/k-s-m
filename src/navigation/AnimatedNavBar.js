@@ -37,7 +37,7 @@ function AnimatedNavBar(props) {
     hideNavBar.kill();
     window.removeEventListener('scroll', changeBackground);
   }
-  })
+  },[])
      
     
     return (

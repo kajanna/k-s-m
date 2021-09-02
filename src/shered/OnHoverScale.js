@@ -6,7 +6,8 @@ function OnHoverScale(props) {
         gsap.to(currentTarget, { 
             duration: 0.7,
             scale: 1.2,
-            ease: 'back'
+            ease: 'back',
+            cursor: 'pointer'
          });
     };
     const onLeave = ({ currentTarget }) => {

@@ -1,6 +1,7 @@
 .welcome {
     width: 100%;
     height: 100%;
+    margin-bottom: 2rem;
 }
 .welcome__background {
     background-image: url('../assets/shapes_all.svg');
@@ -47,6 +48,7 @@
     .welcome__background {
         margin-left: 50%;
         width: 50%;
+        margin-bottom: 0.3rem
       }
     .welcome__main {
         margin-right: 54%;  

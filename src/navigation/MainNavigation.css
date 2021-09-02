@@ -35,9 +35,6 @@
     width: 28px;
     margin: 0 14px
 }
-.main-navigation--logo {
-    color: var(--brown);
-}
 
 @media (min-width: 986px) {
     .main-navigation__nav-bar {

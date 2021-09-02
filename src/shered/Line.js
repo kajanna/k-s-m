@@ -6,9 +6,23 @@ import './Line.css'
 function Line(props) {
 
     const lineRef = useRef();
+    useEffect(() => {
+        const drawLine = () => gsap.to(lineRef.current,
+            {
+                x: '-100%',
+                scrollTrigger: {
+                    trigger: lineRef.current,
+                    start: "top top",
+                    end: "bottom center",
+                    scrub: true
+                }
+            }
+        )
+            drawLine();
+    }, [])
 
     return (
-        <div className="line" ></div>
+        <div className="line" ref={lineRef}></div>
 
     );
 }
