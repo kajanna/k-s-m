@@ -1,7 +1,7 @@
 .welcome {
     width: 100%;
     height: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .welcome__background {
     background-image: url('../assets/shapes_all.svg');

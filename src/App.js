@@ -1,9 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import MySkills from './components/MySkills'
+import About from './components/About'
 import Hi from './components/Hi';
-import MyReactProjects from './components/MyReactProjects';
+import MyProjects from './components/MyProjects';
 import WelcomeScreen from './components/WelcomeScreen'
 import MainNavigation from './navigation/MainNavigation';
 import ContactMe from './components/ContactMe';
@@ -20,8 +20,8 @@ function App() {
     <div className="main">
     <WelcomeScreen />
     <Hi />
-     <MyReactProjects />
-    <MySkills />
+    <About />
+    <MyProjects />
     <ContactMe />
     <Footer />
     </div>

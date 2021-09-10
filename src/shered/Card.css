@@ -6,6 +6,6 @@
     background-color: #fff;
     margin: 4%;
     padding: 4%;
-    transform: scaleX(0);
-    transform: scaleX(0);
+    height: fit-content;
+    width: fit-content;
 }

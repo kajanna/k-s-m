@@ -35,7 +35,9 @@
     width: 28px;
     margin: 0 14px
 }
-
+.main-navigation--logo:hover{
+    cursor: pointer;
+}
 @media (min-width: 986px) {
     .main-navigation__nav-bar {
         margin-right: 45px;

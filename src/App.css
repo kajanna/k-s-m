@@ -9,12 +9,15 @@
     --pink: #BD9781;
     --brown: #7D5A50;
     --shadow: 9px 0px 8px rgb(36, 4, 4, 0.3);
-    --text--color: #fff
 }
-.text-brown {
-    color: var(--brown);
+.header {
+    font-size: larger;
+    color: #fff;
+    text-align: center;
 }
-.text-grey {
-    color: var(--grey);
+@media (min-width: 750px) {
+    .header {
+        font-size: xx-large;
+    } 
 }
 

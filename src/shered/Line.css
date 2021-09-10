@@ -1,7 +1,19 @@
 .line {
+    margin: 8% auto;
     height: 3px;
     width: 80%;
     z-index: 5;
-    background-color: white;
     border-radius: 2px;
+}
+.line--pink {
+    background-color: var(--pink);
+}
+.line--white {
+    background-color: #fff;
+}
+@media (min-width: 750px) {
+    .line {
+        margin: 2% auto;;
+    }
+
 }

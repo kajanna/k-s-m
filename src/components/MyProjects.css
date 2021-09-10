@@ -1,0 +1,17 @@
+.my-projects {
+    background-color: #BD9781;
+    padding: 4%;
+}
+.my-projects_projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+@media (min-width: 986px) {
+    .my-projects_projects {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4%;
+        
+    }  
+}

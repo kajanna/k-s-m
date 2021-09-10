@@ -1,28 +1,12 @@
-import React, { useEffect, useRef } from 'react';
-import  { gsap } from 'gsap';
-
+import React from 'react';
+import OnMountScale from './OnMountScale';
 import './Line.css'
 
 function Line(props) {
-
-    const lineRef = useRef();
-    useEffect(() => {
-        const drawLine = () => gsap.to(lineRef.current,
-            {
-                x: '-100%',
-                scrollTrigger: {
-                    trigger: lineRef.current,
-                    start: "top top",
-                    end: "bottom center",
-                    scrub: true
-                }
-            }
-        )
-            drawLine();
-    }, [])
-
     return (
-        <div className="line" ref={lineRef}></div>
+        <OnMountScale>
+        <div className={`line ${props.white ? 'line--white': 'line--pink'} `}></div>
+        </OnMountScale>
 
     );
 }

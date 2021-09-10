@@ -7,7 +7,6 @@ function OnHoverScale(props) {
             duration: 0.7,
             scale: 1.2,
             ease: 'back',
-            cursor: 'pointer'
          });
     };
     const onLeave = ({ currentTarget }) => {

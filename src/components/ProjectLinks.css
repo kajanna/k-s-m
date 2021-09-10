@@ -1,0 +1,17 @@
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+.project-links__item {
+    background-color: var(--pink);
+    height: 2rem;
+    width: 2rem;
+    padding: 12px;
+    
+}
+.project-links__item:hover {
+    background-color: var(--beige);
+    cursor: pointer;
+}
