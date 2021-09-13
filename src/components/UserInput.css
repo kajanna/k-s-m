@@ -1,0 +1,21 @@
+.user-input {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+.user-input label {
+    font-size: smaller;
+    margin-left: 2%;
+    color: var(--pink);
+}
+.user-input input {
+    width: 100%;
+    height: 40px;
+   
+    border: solid 3px var(--pink);
+}
+.user-input--error-text {
+    font-size: smaller;
+    color: var(--error);
+    margin-left: 2%;
+}

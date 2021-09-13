@@ -7,7 +7,9 @@ import "./About.css";
 function MySkills(props) {
   return (
     <div className="about">
-      <div className="header">I work with:</div>
+      <div className="about__header"> 
+      <div className="about__header-text">I work with:</div>
+      </div>
       <Line white />
       <div className="about__logos about__logo">
         <div className="about__js about__logo"></div>
