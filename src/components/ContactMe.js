@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Card from '../shered/Card';
+import ContactForm from './ContactForm';
 import Line from '../shered/Line';
-import UserInput from './UserInput';
+
 
 import './ContactMe.css'
 
@@ -11,14 +12,10 @@ function ContactMe(props) {
         <div className="contact-me__bg-image">
         <div className="contact-me">
         <Card>
+         
             <div className="contact-me__header">Contact</div>
-            <div className="contact-me_form">
-                <form>
-                <UserInput name="name"/>
-                <UserInput name="email"/>
-                <UserInput name="message"/>
-                </form>
-            </div>
+            <ContactForm />
+       
         </Card>
         </div>
         </div>

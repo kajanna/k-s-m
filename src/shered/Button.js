@@ -6,7 +6,10 @@ import './Button.css'
 function Button(props) {
     return (
         <OnHoverScale>
-        <button className={`button ${ props.white ? "button-white" : "button-brown"}`}>
+        <button 
+            type={props.type} 
+            className={`button ${ props.white ? "button-white" : "button-brown"}`}
+            onClick={props.onClick}>
             {props.text}
         </button>
         </OnHoverScale>

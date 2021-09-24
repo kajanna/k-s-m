@@ -11,6 +11,9 @@
     --shadow: 9px 0px 8px rgb(36, 4, 4, 0.3);
     --error: #BD4B4B
 }
+*:focus {
+    outline: none;
+}
 .header {
     font-size: larger;
     color: #fff;

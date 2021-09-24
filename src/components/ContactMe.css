@@ -5,7 +5,6 @@
     background-size: cover;  
 }
 .contact-me {
-    padding: 4rem 0;
     display: flex;
     justify-content: center;
 }
@@ -14,31 +13,9 @@
     color: var(--brown);
     text-align: center;
 }
-.contact-me_form {
-    margin-top: 16%;
-    width: 20rem;
-}
 
-@media (min-width: 750px) {
-    .contact-me__bg-image {
-        height: 16rem;    
-    }
-} 
 @media (min-width: 986px) {
-    .contact-me__bg-image {
-        background-position: 80vh;
-        padding: 0 0 40% ;    
-        height: 8rem;    
-    }
-    .contact-me {
-        display: flex;
-        justify-content: center;
-    }
     .contact-me__header {
         font-size: xx-large;
     }
-    .contact-me_form {
-        margin-top: 8%;
-    }
-   
 }
