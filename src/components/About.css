@@ -1,83 +1,50 @@
 .about {
-    background-color: var(--grey);
-    padding: 4%;
-    text-align: center;
-    color: var(--grey);
-}
-.about__header {
-    background-image: url('../assets/shape_white.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 6rem;
-    width: 8rem;
-    margin: 1rem auto 1rem auto;
-}
-.about__header-text {
-    padding-top: 1.6rem;
-    font-size: large;
-}
-.about__logos {
+    background-color: #a47C70;
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 2%;
+}
+.about__blob {
+    background-image: url('../assets//shape_pink_large.svg');
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 6rem;
+    z-index: 6;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2rem;
+    color: #fff;
+}
+
+.about__content p {
+    color: var(--grey);
+    margin: 3% 0 4% 0;
+}
+.about__button-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
     
 }
-.about__logo {
-    margin: 8% 8%
+@media (min-width: 750px) {
+    .about__content p {
+        margin: 2% 0 2% 0;
+    }
+    .about__button-section {
+        margin-top: 4%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
-.about__html {
-    background-image: url('../assets/technologiesLogos/htmlLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.about__css {
-    background-image: url('../assets/technologiesLogos/cssLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.about__js {
-    background-image: url('../assets/technologiesLogos/javaScriptLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.about__react {
-    background-image: url('../assets/technologiesLogos/reactLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.about__node {
-    background-image: url('../assets/technologiesLogos/nodeLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.about__materialui {
-    background-image: url('../assets/technologiesLogos/materialUILogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
+
 @media (min-width: 986px) {
-    .about__logo {
-        margin: 2% 4%
-    }
-    .about__header {
+    .about__blob {
         height: 8rem;
-        width: 10rem;
-        margin: -6rem auto 1rem auto;
-    }
-    .about__header-text {
-        padding-top: 2rem;
-        font-size: x-large;
+        width: 12rem;
+        margin-top: -8rem;
+        padding-top: 3.5rem;
     }
 }

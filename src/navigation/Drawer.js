@@ -7,21 +7,23 @@ import './Drawer.css';
 
 function Drawer(props) {
     const openDrawerTL = useRef();
+    const drawerRef = useRef();
+    const menuRef = useRef();
     const bdRef = useRef();
     
     useEffect(() => {
       openDrawerTL.current = gsap.timeline()
         .to(bdRef.current, {
-            duration: .5,
-            backgroundColor: 'rgba(0, 0, 0, .5)'
+            duration: 0.3,
+            x: 0
         })
-        .to('.drawer', {
-          duration: 0.6,
+        .to(drawerRef.current, {
+          duration: 0.4,
           x: 0,
           boxShadow: "var(--shadow)",
           ease: "slow",
         })
-        .to('.drawer__menu', {
+        .to(menuRef.current, {
             duration: 0.3,
             opacity: 1
         });
@@ -31,15 +33,15 @@ function Drawer(props) {
     const removeDrawer = () => {
         openDrawerTL.current = gsap.timeline()
         .to(bdRef.current, {
-            duration: 0.4,
-            backgroundColor: 'rgba(0, 0, 0, 0)'
+            duration: 0.3,
+            x: -800,
         })
-        .to('.drawer__menu', {
-            duration: 0.4,
+        .to(menuRef.current, {
+            duration: 0.2,
             opacity: 0,
         })
-        .to('.drawer', {
-            duration: 0.5,
+        .to(drawerRef.current, {
+            duration: 0.4,
             x: -400,
             boxShadow: 'none',
             ease: "slow",
@@ -49,8 +51,8 @@ function Drawer(props) {
 
     return (
         <>
-        <div className="drawer" onClick={removeDrawer}>
-            <div className="drawer__menu">
+        <div className="drawer" ref={drawerRef} onClick={removeDrawer}>
+            <div className="drawer__menu" ref={menuRef}>
                 <Menu />
             </div>
         </div>

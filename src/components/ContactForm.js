@@ -5,6 +5,8 @@ import * as Yup from 'yup';
 import UserInput from './UserInput';
 import Button from '../shered/Button'
 
+import './ContactForm.css';
+
 const contactSchema = Yup.object().shape({
   name: Yup.string()
     .max(60, "Za długie imię")
@@ -34,7 +36,7 @@ function ContactForm() {
 
     return (
       <FormikProvider value={formik}>
-        <div>
+        <div className="contact-form__form">
         <Form>
         <UserInput
           label="name"
@@ -55,7 +57,7 @@ function ContactForm() {
           type="text"
           large
         />
-        <div>
+        <div className="contact-form__button">
           <Button type="submit" text="submit" />
         </div>
       </Form>

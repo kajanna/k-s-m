@@ -9,7 +9,9 @@
     --pink: #BD9781;
     --brown: #7D5A50;
     --shadow: 9px 0px 8px rgb(36, 4, 4, 0.3);
-    --error: #BD4B4B
+    --error: #BD4B4B;
+    --medium-screen-size: 750px;
+    --large-screen-size: 986px;
 }
 *:focus {
     outline: none;

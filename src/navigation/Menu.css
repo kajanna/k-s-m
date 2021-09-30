@@ -3,16 +3,15 @@
     flex-direction: column;
 }
 .menu li {
-    font-size: larger;
     list-style-type: none;
-    margin-bottom: 16%;
+    margin: 12%;
+    font-size: larger;
     color: var(--brown);
     padding: 4px 8px;
-    border: 3px solid transparent
 }
-.menu li:hover {
-    cursor: pointer;
-    color: var(--pink);
+.menu a {
+    text-decoration: none;
+    color: inherit
 }
 
 @media (min-width: 986px) {
@@ -21,13 +20,20 @@
     }
     .menu li {
         display: inline;
-        margin-left: 16%;
-        font-size:x-large;
-        color: #fff
+        margin-left: 2%;
     }
-    .menu li:hover {
+    .menu a {
+        font-size: x-large;
+        color: #fff;
+        border: 3px solid transparent
+    }
+    .menu a:hover {
         cursor: pointer;
+        background-color: rgba(71, 41, 12, 0.1);
         color: #fff;
         border: 3px solid#fff;
+    }
+    .menu__line {
+        display: none;
     }
 }

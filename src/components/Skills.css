@@ -1,0 +1,91 @@
+.skills {
+    background-color: var(--grey);
+    padding: 4%;
+    text-align: center;
+    color: var(--grey);
+}
+.skills__header {
+    background-image: url('../assets/shape_white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6rem;
+    width: 8rem;
+    margin: 1rem auto 1rem auto;
+}
+.skills__header-text {
+    padding-top: 1.6rem;
+    font-size: large;
+}
+.skills__logos {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    
+}
+.skills__logo {
+    margin: 8% 8%
+}
+.skills__html {
+    background-image: url('../assets/technologiesLogos/htmlLogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 70px;
+}
+.skills__css {
+    background-image: url('../assets/technologiesLogos/cssLogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 70px;
+}
+.skills__js {
+    background-image: url('../assets/technologiesLogos/javaScriptLogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 70px;
+}
+.skills__react {
+    background-image: url('../assets/technologiesLogos/reactLogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 70px;
+}
+.skills__node {
+    background-image: url('../assets/technologiesLogos/nodeLogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 70px;
+}
+.skills__materialui {
+    background-image: url('../assets/technologiesLogos/materialUILogo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 70px;
+}
+@media (min-width: 750px) {
+    .skills__logo {
+        margin: 4% 8%
+    }
+    .skills__header {
+        margin: 0 auto 2rem auto;
+    }
+}
+@media (min-width: 986px) {
+    .skills__logo {
+        margin: 2% 4%
+    }
+    .skills__header {
+        height: 8rem;
+        width: 10rem;
+        margin: -6rem auto 1rem auto;
+    }
+    .skills__header-text {
+        padding-top: 2rem;
+        font-size: x-large;
+    }
+}

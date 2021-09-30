@@ -1,21 +1,29 @@
-.contact-me__bg-image {
+.contact__bg-image {
     background-image: url('../assets/shapes_all.svg');
     background-color: var(--beige);
     width: 100%;
     background-size: cover;  
 }
-.contact-me {
+.contact {
     display: flex;
     justify-content: center;
+    padding: 1rem;
 }
-.contact-me__header {
+.contact__header {
+    margin: 0.8rem 0 1.2rem 0;
+}
+.contact__text {
     font-size: x-large;
-    color: var(--brown);
+    color: var(--pink);
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 986px) {
-    .contact-me__header {
+    .contact__header {
+        margin-bottom: 3rem;
+    }
+    .contact__text {
         font-size: xx-large;
     }
 }
