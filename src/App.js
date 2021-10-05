@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Skills from './components/Skills'
 import About from './components/About';
 import MyProjects from './components/MyProjects';
@@ -13,18 +13,21 @@ import './App.css';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
-  
-  return (
-    <>
-    <MainNavigation />
-    <div className="main">
-    <WelcomeScreen />
-    <About />
-    <Skills />
-    <MyProjects />
-    <Contact />
-    <Footer />
-    </div>
+
+  return ( 
+  <>
+    <Switch>
+      <Route exact path="/">
+      <MainNavigation />
+      <WelcomeScreen /> 
+          <About />
+          <Skills />
+          <MyProjects />
+          <Contact />
+          <Footer />
+      </Route>
+      <Redirect to="/"/>
+    </Switch>
     </>
   );
 }

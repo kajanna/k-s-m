@@ -8,14 +8,14 @@ import './About.css'
 
 function About(props) {
   return (
-    <section id="about" className="about">
+    <section  id="about" className="about">
       <div className="about__content">
         <Card>
           <div>
-            <div className="about__blob">
+            <div className="about__blob" >
               <div className="header">Hi!</div>
             </div>
-            <p className="about__content-text">
+            <p className="about__content-text" >
               For about 10 years I have worked as a graphic designer and DTP
               operator. I created publication layouts, designing notebooks,
               postcards and info materials. My workflow usually included contact
@@ -38,7 +38,7 @@ function About(props) {
               to work with react but I can also learn other js Freamworks.
             </p>
             <Line />
-            <div className="about__button-section">
+            <div className="about__button-section" >
               <div>
                 <p>My skills</p>
                 <Button text="about" />

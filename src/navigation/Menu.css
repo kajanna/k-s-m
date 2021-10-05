@@ -4,10 +4,9 @@
 }
 .menu li {
     list-style-type: none;
-    margin: 12%;
+    margin: 8%;
     font-size: larger;
     color: var(--brown);
-    padding: 4px 8px;
 }
 .menu a {
     text-decoration: none;
@@ -25,6 +24,7 @@
     .menu a {
         font-size: x-large;
         color: #fff;
+        padding: 4px 8px;
         border: 3px solid transparent
     }
     .menu a:hover {

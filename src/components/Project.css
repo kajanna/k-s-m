@@ -1,17 +1,16 @@
 .project {
+    margin: 2%;
     display: flex;
-    justify-content: center;
+    align-content:stretch;
 }
 .project__img {
-    background-image: url('../assets/portfolo_strona_bez.svg');
-    background-color: var(--beige);
     background-repeat: no-repeat;
-    height: 240px;
+    height: 80px;
     width: 240px;
-    margin: 8% auto 4% auto
+    margin: 4% auto 0%
 }
 .project__description {
-    margin: 8%;
+    margin: 0 4% 2%;
     color: var(--grey)
 }
 .project__description--title {
@@ -21,15 +20,18 @@
     text-align: center;
 }
 @media (min-width: 750px) {
+    .project {
+        flex-basis: 50%;
+    }
     .project__img {
-        margin: 12% auto 0% auto;
+        margin: 2% auto 0% auto;
     }
     .project__description--title {
         font-size: larger;
-        margin-bottom: 8%;
+        margin-bottom: 0%;
     }
     .project__description--description {
-        margin: 8%;
+        margin: 2% 4%;
     }
 }
 

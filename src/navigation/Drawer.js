@@ -1,18 +1,19 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef,  } from 'react';
+import  { createPortal } from 'react-dom';
 import { gsap } from 'gsap'
 import Menu from './Menu'
 import Backdrop from '../shered/Backdrop';
 
 import './Drawer.css';
 
-function Drawer(props) {
-    const openDrawerTL = useRef();
+const Drawer = (props) => {
+
     const drawerRef = useRef();
     const menuRef = useRef();
     const bdRef = useRef();
     
     useEffect(() => {
-      openDrawerTL.current = gsap.timeline()
+     gsap.timeline()
         .to(bdRef.current, {
             duration: 0.3,
             x: 0
@@ -31,7 +32,7 @@ function Drawer(props) {
     }, []);
 
     const removeDrawer = () => {
-        openDrawerTL.current = gsap.timeline()
+       gsap.timeline()
         .to(bdRef.current, {
             duration: 0.3,
             x: -800,
@@ -49,7 +50,7 @@ function Drawer(props) {
           })
     };
 
-    return (
+    return createPortal(
         <>
         <div className="drawer" ref={drawerRef} onClick={removeDrawer}>
             <div className="drawer__menu" ref={menuRef}>
@@ -57,8 +58,9 @@ function Drawer(props) {
             </div>
         </div>
         <Backdrop ref={bdRef} closeBackdrop={removeDrawer}/>
-        </>
-    );
+        </>, 
+        document.getElementById('drawer')
+        );
 }
 
 export default Drawer;

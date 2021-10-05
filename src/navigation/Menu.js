@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import Line from '../shered/Line';
 
@@ -8,19 +9,19 @@ function Menu(props) {
     return (
       <div className="menu">   
         <ul>
-          <li><a href="#about">about</a></li>
+          <li><HashLink smooth to="/#about">about</HashLink></li>
           <div className="menu__line">
             <Line />
           </div>
-          <li><a href="#skills">skills</a></li>
+          <li><HashLink smooth to="/#skills">skills</HashLink></li>
           <div className="menu__line">
             <Line />
           </div>
-          <li><a href="#projects">projects</a></li>
+          <li><HashLink smooth to="/#projects">projects</HashLink></li>
           <div className="menu__line">
             <Line />
           </div>
-          <li><a href="#contact">contact</a></li>
+          <li><HashLink smooth to="/#contact">contact</HashLink></li>
         </ul>
       </div>
     );

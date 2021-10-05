@@ -1,6 +1,6 @@
 .drawer {
     z-index: 30;
-    position: absolute;
+    position: fixed;
     background-color: #fff;
     padding: 2rem;
     height: 100%;

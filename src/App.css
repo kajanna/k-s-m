@@ -21,6 +21,10 @@
     color: #fff;
     text-align: center;
 }
+section {
+    scroll-margin-top: 6rem;
+}
+
 @media (min-width: 750px) {
     .header {
         font-size: xx-large;
