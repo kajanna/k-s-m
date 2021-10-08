@@ -4,7 +4,7 @@
 }
 .menu li {
     list-style-type: none;
-    margin: 8%;
+    margin: 4% auto 4% 16%;
     font-size: larger;
     color: var(--brown);
 }
@@ -19,7 +19,7 @@
     }
     .menu li {
         display: inline;
-        margin-left: 2%;
+        margin: 3%;
     }
     .menu a {
         font-size: x-large;

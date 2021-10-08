@@ -9,6 +9,10 @@ function Menu(props) {
     return (
       <div className="menu">   
         <ul>
+        <li><HashLink smooth to="/#home">home</HashLink></li>
+          <div className="menu__line">
+            <Line />
+          </div>
           <li><HashLink smooth to="/#about">about</HashLink></li>
           <div className="menu__line">
             <Line />

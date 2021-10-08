@@ -8,10 +8,23 @@
     background-color: var(--pink);
     height: 2rem;
     width: 2rem;
-    padding: 12px;
-    
+    padding: 8px;
 }
 .project-links__item:hover {
     background-color: var(--beige);
     cursor: pointer;
+}
+@media (min-width: 750px) {
+    .project-links {
+        margin: 0%;
+        justify-content: flex-end;
+    }
+    .project-links__item {
+        margin: 1rem;
+    }
+}
+@media (min-width: 986px) {
+    .project-links__item {
+        margin: 0.5rem;
+    }
 }

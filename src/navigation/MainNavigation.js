@@ -49,12 +49,24 @@ function MainNavigation(props) {
             </div>
             <div className="main-navigation--logo">
               <OnHoverScale>
-                <LinkedIn />
+                <a
+                  href="https://www.linkedin.com/in/kaja-szokalska-mas%C5%82yk-1a816b204"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedIn />
+                </a>
               </OnHoverScale>
             </div>
             <div className="main-navigation--logo">
               <OnHoverScale>
-                <GitHub />
+                <a
+                  href="https://github.com/kajanna"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GitHub />
+                </a>
               </OnHoverScale>
             </div>
           </div>

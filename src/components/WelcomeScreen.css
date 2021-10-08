@@ -46,9 +46,8 @@
 }   
 @media (min-width: 986px) {
     .welcome__background {
-        margin-left: 50%;
-        width: 50%;
-        margin-bottom: 0.3rem
+        background-position:  top right;
+        background-size: 55%;
       }
     .welcome__main {
         margin-right: 54%;  
@@ -56,8 +55,7 @@
       .welcome__blob {
         margin:4% 0% 0% 12%;
         width: 28rem;
-        height: 28rem;
-        filter: invert(27%) sepia(51%) saturate(48%)  brightness(104%) ; 
+        height: 28rem; 
     }
     .welcome__text {
         font-size: 3rem;

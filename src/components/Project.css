@@ -1,37 +1,38 @@
 .project {
-    margin: 2%;
     display: flex;
-    align-content:stretch;
+    margin: 2%;
 }
 .project__img {
     background-repeat: no-repeat;
     height: 80px;
     width: 240px;
-    margin: 4% auto 0%
+    margin: 16% auto 0%
 }
 .project__description {
     margin: 0 4% 2%;
-    color: var(--grey)
-}
-.project__description--title {
-    text-align: center;
+    color: var(--grey);
 }
 .project__description--description {
     text-align: center;
 }
 @media (min-width: 750px) {
     .project {
-        flex-basis: 50%;
+        margin: 0% 4%;
     }
     .project__img {
-        margin: 2% auto 0% auto;
-    }
-    .project__description--title {
-        font-size: larger;
-        margin-bottom: 0%;
+        margin: 0% auto;
     }
     .project__description--description {
-        margin: 2% 4%;
+        margin: 4%;
+    }
+}
+@media (min-width: 986px) {
+    .project {
+        margin: 0%;
+        width: 38rem;
+    }
+    .project__description {
+        margin: 4%
     }
 }
 

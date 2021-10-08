@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Skills from './components/Skills'
 import About from './components/About';
-import MyProjects from './components/MyProjects';
+import Projects from './components/Projects';
 import WelcomeScreen from './components/WelcomeScreen'
 import MainNavigation from './navigation/MainNavigation';
 import Contact from './components/Contact';
@@ -22,7 +22,7 @@ function App() {
       <WelcomeScreen /> 
           <About />
           <Skills />
-          <MyProjects />
+          <Projects />
           <Contact />
           <Footer />
       </Route>

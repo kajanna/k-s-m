@@ -29,7 +29,7 @@ function WelcomeScreen(props) {
     }, [])
 
     return (
-      <div className="welcome">
+      <div id="home" className="welcome">
         <div className="welcome__shapes"></div>
         <div className="welcome__background" ref={welcomeBg}></div>
         <div className="welcome__main">

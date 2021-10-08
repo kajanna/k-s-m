@@ -2,31 +2,45 @@ import React from 'react';
 
 import OnHoverScale from '../shered/OnHoverScale';
 import { ReactComponent as GitHub } from '../assets/my_github.svg'
-import { ReactComponent as ImageCollection } from '../assets/imageCollection.svg'
 import { ReactComponent as OpenInBrowser } from '../assets/openInBrowser.svg'
 
 import './ProjectLinks.css';
 
 function ProjectLinks(props) {
-    return (
-      <div className="project-links">
-          <OnHoverScale>
+  const { feLink, beLink, pageLink } = props;
+  return (
+    <div className="project-links">
+      <OnHoverScale>
         <div className="project-links__item">
-          <GitHub />
+          <a href={feLink} 
+            target="_blank"
+            rel="noreferrer">
+            <GitHub />
+          </a>
         </div>
-        </OnHoverScale>
+      </OnHoverScale>
+      {beLink && (
         <OnHoverScale>
-        <div className="project-links__item">
-          <ImageCollection />
-        </div>
+          <div className="project-links__item">
+            <a href={beLink} 
+            target="_blank"
+            rel="noreferrer">
+              <GitHub />
+            </a>
+          </div>
         </OnHoverScale>
-        <OnHoverScale>
+      )}
+      { pageLink && <OnHoverScale>
         <div className="project-links__item">
-          <OpenInBrowser />
+          <a href={pageLink} 
+          target="_blank"
+          rel="noreferrer">
+            <OpenInBrowser />
+          </a>
         </div>
-        </OnHoverScale>
-      </div>
-    );
+      </OnHoverScale>}
+    </div>
+  );
 }
 
 export default ProjectLinks;
