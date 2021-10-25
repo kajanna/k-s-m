@@ -16,7 +16,9 @@ function Contact(props) {
             <div className="contact__text">Contact</div>
             <Line />
           </div>
-          <ContactForm />
+          <iframe title="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfrMvRyFvQTl2KUb6mdQLreKAxWzrcCggKar6FiqSla-PYGMQ/viewform?embedded=true" 
+          width="440" height="304" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
+          {/* <ContactForm /> */}
         </Card>
       </div>
     </section>
