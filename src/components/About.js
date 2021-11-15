@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import Line from '../shered/Line';
 import Card from '../shered/Card';
@@ -41,15 +42,21 @@ function About(props) {
             <div className="about__button-section" >
               <div>
                 <p>My skills</p>
-                <Button text="about" />
+                <HashLink smooth to="/#skills">
+                <Button text="skills" />
+                </HashLink>
               </div>
               <div>
                 <p>Checkout my projects.</p>
+                <HashLink smooth to="/#projects">
                 <Button text="projects" />
+                </HashLink>
               </div>
               <div>
                 <p>Contact me.</p>
+                <HashLink smooth to="/#contact">
                 <Button text="contact" />
+                </HashLink>
               </div>
             </div>
           </div>

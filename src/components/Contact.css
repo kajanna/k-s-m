@@ -2,12 +2,13 @@
     background-image: url('../assets/shapes_all.svg');
     background-color: var(--beige);
     width: 100%;
-    background-size: cover;  
+    background-size: cover;
+     
 }
 .contact {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem;  
 }
 .contact__header {
     margin: 0.8rem 0 1.2rem 0;

@@ -1,13 +1,16 @@
-import React from 'react';
+import React,  {useState } from 'react';
 
 import Card from '../shered/Card';
 import ContactForm from './ContactForm';
 import Line from '../shered/Line';
-
+import AfterMessageInfo from './AfterMessageInfo';
 
 import './Contact.css'
 
+
 function Contact(props) {
+  const [ messageIsSend, setMessageIsSend ] = useState(false);
+  const clearMessageIsSend = () => setMessageIsSend(false)
   return (
     <section id="contact" className="contact__bg-image">
       <div className="contact">
@@ -16,9 +19,10 @@ function Contact(props) {
             <div className="contact__text">Contact</div>
             <Line />
           </div>
-          <iframe title="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfrMvRyFvQTl2KUb6mdQLreKAxWzrcCggKar6FiqSla-PYGMQ/viewform?embedded=true" 
-          width="440" height="304" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
-          {/* <ContactForm /> */}
+          {!messageIsSend 
+           ? <ContactForm onMessageSend={()=> setMessageIsSend(true)}/>
+           : <AfterMessageInfo clearMessageIsSend={clearMessageIsSend}/>
+          }
         </Card>
       </div>
     </section>

@@ -3,7 +3,8 @@
     cursor: pointer;
     font-size: large;
     width: 7rem;
-    margin: 0.5rem auto
+    margin: 0.5rem auto;
+    border-radius:  40px;
 }
 .button:hover {
     border: 3px solid var(--beige);

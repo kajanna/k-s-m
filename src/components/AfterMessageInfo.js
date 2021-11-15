@@ -1,0 +1,18 @@
+import React from 'react';
+
+import Button from '../shered/Button';
+
+import './AfterMessageInfo.css'
+
+function AfterMessageInfo(props) {
+    return (
+        <div className="afterMessageInfo">
+           <p>Your message has been send. Thank you!</p>
+           <div className="afterMessageInfo__button">
+             <Button onClick={props.clearMessageIsSend} text='send message'/>
+             </div> 
+        </div>
+    );
+}
+
+export default AfterMessageInfo;

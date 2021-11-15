@@ -1,0 +1,10 @@
+.afterMessageInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.afterMessageInfo__button {
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+}

@@ -4,7 +4,7 @@
     margin-bottom: 4rem;
 }
 .welcome__background {
-    background-image: url('../assets/shapes_all.svg');
+    background-image: url('../assets/welcom_animation.svg');
     background-color: var(--beige);
     background-size: contain;
     background-position:  top center;
