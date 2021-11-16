@@ -10,7 +10,7 @@
 }
 .project__description {
     margin: 0 4% 2%;
-    color: var(--grey);
+    color: var(--darkgrey);
 }
 .project__description--description {
     text-align: center;

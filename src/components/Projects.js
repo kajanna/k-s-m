@@ -1,19 +1,22 @@
 import React from 'react';
 
 import Project from './Project'
-import Line from '../shered/Line';
 import myHome from '../assets/my_home_logo.svg'
 import meWant from '../assets/me_want_logo.svg'
 import inYourFridge from '../assets/in_your_fridge_logo.svg'
+
+import { ReactComponent as Projects } from '../assets/projects.svg'
 
 import './Projects.css'
 
 function MyProjects(props) {
   return (
+    
     <section className="my-projects" id="projects">
-      <div className="header">Projects</div>
-      <Line white />
+      <div className="my-project--separator"></div>
+     <div className="my-projects__header"><Projects /></div>
       <div className="my-projects_projects">
+   
         <Project
           img={myHome}
           key="myHome"
@@ -45,7 +48,7 @@ function MyProjects(props) {
           feLink=""
         />
       </div>
-      <Line white />
+
     </section>
   );
 }

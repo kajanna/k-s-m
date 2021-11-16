@@ -2,13 +2,13 @@
     padding: 0.5rem 0.7rem;
     cursor: pointer;
     font-size: large;
-    width: 7rem;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
     border-radius:  40px;
+    width: 200px;
 }
 .button:hover {
-    border: 3px solid var(--beige);
-    color: var(--beige)
+    border: 3px solid var(--darkgrey);
+    color: var(--darkgrey)
 }
 .button-white {
     border: 3px solid #fff;
@@ -17,10 +17,4 @@
 .button-brown {
     border: 3px solid var(--pink);
     color: var(--pink);
-}
-@media (min-width: 750px) {
-    .button {
-        width: 8rem;
-    }
-
 }

@@ -1,6 +1,5 @@
 .contact__bg-image {
-    background-image: url('../assets/shapes_all.svg');
-    background-color: var(--beige);
+    background-color: var(--darkgrey);
     width: 100%;
     background-size: cover;
      

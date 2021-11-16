@@ -5,7 +5,7 @@
     margin: 0;
 }
 .main-navigation__nav-bar {
-    margin: 24px;
+    margin: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,20 +33,18 @@
 .main-navigation--logo {
     height: 28px;
     width: 28px;
-    margin: 0 14px
+    margin-left: 2em;
 }
 .main-navigation--logo:hover{
     cursor: pointer;
 }
 @media (min-width: 986px) {
     .main-navigation__nav-bar {
-        margin-right: 45px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        color:white
+        color:white;
     }
-    
     .main-navigation__hamburger-menu  {
         display: none;
     }
@@ -54,8 +52,6 @@
         display: inline;
     }
     .main-navigation--logo {
-        margin-top: 10%;
-        width: 36px;
-        height: 36px;
+        margin-top: 8%;
     }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 
 import Card from '../shered/Card'
-import Line from '../shered/Line';
 import ProjectLinks from './ProjectLinks';
 
 import './Project.css'
@@ -21,10 +20,9 @@ function Project(props) {
             className="project__img"
             style={{ backgroundImage: `url(${img})` }}
           ></div>
-          <Line />
+   
           <div className="project__description--description">{description}</div>
           <div className="project__description--description">
-            <Line />
             <p>{frontEnd}</p>
             <p>{backEnd}</p>
           </div>

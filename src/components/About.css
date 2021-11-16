@@ -1,50 +1,52 @@
 .about {
-    background-color: #a47C70;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8% ;
+    padding: 4%  8% 8%;
 }
-.about__blob {
-    background-image: url('../assets//shape_pink_large.svg');
-    background-repeat: no-repeat;
-    height: 4rem;
-    width: 6rem;
-    z-index: 6;
-    margin-top: -4rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 1.2rem;
-    color: #fff;
+.about__header {
+  width: 12rem;
+  height: auto;
+  margin: 4% auto;
 }
 
 .about__content p {
     color: var(--grey);
-    margin: 3% 0 4% 0;
+    margin: 4% 6% 8%;
 }
 .about__button-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 2rem;
+    align-items: center;
     
 }
+
 @media (min-width: 750px) {
     .about__content p {
-        margin: 2% 0 2% 0;
+        margin: 4% 24%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        padding: 0%  8% 2%;
+    }
+    .about__header {
+        width: 18rem;
+        height: auto;
+        margin: 4% auto;
+      }
+    .about__content p {
+        margin: 4% 24%;
     }
     .about__button-section {
-        margin-top: 4%;
+        margin: 4%  24%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
 @media (min-width: 986px) {
-    .about__blob {
-        height: 8rem;
-        width: 12rem;
-        margin-top: -8rem;
-        padding-top: 3.5rem;
-    }
+
 }

@@ -1,13 +1,33 @@
 .my-projects {
-    background-color: #BD9781;
-    padding: 4%;
+    background-image: url('../assets/projectsBG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+.my-project--separator {
+    background-image: url('../assets/section_separator.svg');
+    background-repeat: repeat-x;
+    height: 4rem;
+    width: 100%;
+}
+.my-projects__header {
+    width: 18rem;
+    height: auto;
+    margin: 1rem auto;
 }
 .my-projects_projects {
+    padding: 2% 4% 12% 4%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 @media (min-width: 986px) {
+    .my-project--separator {
+        margin-top: -6rem;
+        height: 6rem;
+        width: 100%;
+    }
     .my-projects {
         padding-top: 4%;
     }

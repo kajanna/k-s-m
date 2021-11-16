@@ -1,7 +1,5 @@
 import React from "react";
 
-import Line from '../shered/Line';
-
 import "./Skills.css";
 
 function Skills(props) {
@@ -10,7 +8,6 @@ function Skills(props) {
       <div className="skills__header">
         <div className="skills__header-text">I work with:</div>
       </div>
-      <Line white />
       <div className="skills__logos skills__logo">
         <div className="skills__js skills__logo"></div>
         <div className="skills__html skills__logo"></div>
@@ -20,7 +17,6 @@ function Skills(props) {
         <div className="skills__node skills__logo"></div>
         <div className="skills__materialui skills__logo"></div>
       </div>
-      <Line white />
     </section>
   );
 }

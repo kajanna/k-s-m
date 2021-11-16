@@ -21,8 +21,8 @@ function App() {
       <MainNavigation />
       <WelcomeScreen /> 
           <About />
-          <Skills />
           <Projects />
+          <Skills />
           <Contact />
           <Footer />
       </Route>

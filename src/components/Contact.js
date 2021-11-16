@@ -2,7 +2,6 @@ import React,  {useState } from 'react';
 
 import Card from '../shered/Card';
 import ContactForm from './ContactForm';
-import Line from '../shered/Line';
 import AfterMessageInfo from './AfterMessageInfo';
 
 import './Contact.css'
@@ -17,7 +16,7 @@ function Contact(props) {
         <Card>
           <div className="contact__header">
             <div className="contact__text">Contact</div>
-            <Line />
+  
           </div>
           {!messageIsSend 
            ? <ContactForm onMessageSend={()=> setMessageIsSend(true)}/>

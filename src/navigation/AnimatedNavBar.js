@@ -42,7 +42,6 @@ function AnimatedNavBar(props) {
     
     return (
       <div className="animated-nav-bar" ref={navBarRef}>
-        <div className="animated-nav-bar__blob" ></div>
       </div>
     );
 }

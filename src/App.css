@@ -4,35 +4,18 @@
     font-family: 'Roboto', sans-serif;
 }
 :root {
-    --beige: #404040;
+    --darkgrey: #404040;
     --grey: #808080;
-    --pink: #BD9781;
+    --pink: #e957e2;
     --brown: #7D5A50;
     --shadow: 9px 0px 8px rgb(36, 4, 4, 0.3);
     --error: #BD4B4B;
-    --medium-screen-size: 750px;
-    --large-screen-size: 986px;
 }
 *:focus {
     outline: none;
-}
-.header {
-    font-size: larger;
-    color: #fff;
-    text-align: center;
 }
 section {
     scroll-margin-top: 6rem;
 }
 
-@media (min-width: 750px) {
-    .header {
-        font-size: x-large;
-    } 
-}
-@media (min-width: 986px) {
-    .header {
-        font-size: xx-large;
-    } 
-}
 
