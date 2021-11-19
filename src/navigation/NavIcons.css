@@ -1,0 +1,16 @@
+.nav-icons__logo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav-icons__logo {
+    height: 24px;
+    width: 24px;
+    margin-left: 3rem;
+    display: inline-block;
+  }
+  @media (min-width: 986px) {
+    .nav-icons__logo {
+      margin-left: 2rem;
+    }
+  } 

@@ -3,7 +3,7 @@ import { gsap }from 'gsap';
 
 import Drawer from './Drawer'
 import Menu from './Menu';
-import OnHoverScale from '../shered/OnHoverScale';
+import NavIcons from './NavIcons'
 import AnimatedNavBar from '../navigation/AnimatedNavBar' 
 
 import  './MainNavigation.css';
@@ -35,13 +35,14 @@ function MainNavigation(props) {
         <AnimatedNavBar />
         <div className="main-navigation__nav-bar" ref={navBarMenuRef}>
           <div className="main-navigation__hamburger-menu" onClick={openDrawer}>
-            <OnHoverScale>
               <div className="main-navigation__hamburger-menu--elements"></div>
               <div className="main-navigation__hamburger-menu--elements"></div>
               <div className="main-navigation__hamburger-menu--elements"></div>
-            </OnHoverScale>
           </div>
           <div className="main-navigation__items">
+            <div className="main-navigation__nav-icons">
+              <NavIcons />
+            </div>
             <div className="main-navigation__menu-item">
               <Menu />
             </div>

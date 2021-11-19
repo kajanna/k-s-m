@@ -12,7 +12,6 @@
 }
 .main-navigation__hamburger-menu {
     margin-top: 2px;
-    height: 30px;
     width: 32px;
 }
 .main-navigation__hamburger-menu--elements {
@@ -40,6 +39,9 @@
     }
     .main-navigation__hamburger-menu  {
         display: none;
+    }
+    .main-navigation__nav-icons {
+        display: none
     }
     .main-navigation__menu-item {
         display: inline;
