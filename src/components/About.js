@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import { ReactComponent as Hi } from '../assets/hi.svg'
 import Button from '../shered/Button';
 
 import './About.css'
@@ -12,7 +11,7 @@ function About(props) {
       <div className="about__content">
      
           <div>
-              <div className="about__header"><Hi /></div>
+              <div className="about__header">Hi!</div>
             <p className="about__content-text" >
               I'm ex-graphic designer and DTP operator. About 1,5 year ago I 
               decided to change my career path. I learned basics from Udemy
@@ -27,17 +26,17 @@ function About(props) {
               to work with react but I can also learn other js Freamworks.
             </p>
             <div className="about__button-section" >
-              <div>
+              <div className="about__button">
                 <HashLink smooth to="/#projects">
                 <Button text="projects" />
                 </HashLink>
               </div>
-              <div>
+              <div className="about__button">
                 <HashLink smooth to="/#skills">
                 <Button text="skills" />
                 </HashLink>
               </div>
-              <div>
+              <div className="about__button">
                 <HashLink smooth to="/#contact">
                 <Button text="contact" />
                 </HashLink>

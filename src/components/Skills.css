@@ -1,96 +1,59 @@
 .skills {
     background-color: #fff;
-    padding: 4%;
+    padding: 4% 12%;
     text-align: center;
-    color: var(--darkgrey);
 }
 .skills__header {
     background-color: #fff;
     background-position: center;
     height: 6rem;
-    width: 12rem;
+    width: 10rem;
     margin: -4rem auto 1rem auto;
-    border-radius: 40px 40px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .skills__header-text {
-    padding-top: 1.6rem;
-    font-size: large;
+    font-weight: bold;
+    padding-top: 0.4em;
+    font-size: 38px;
+    color: var(--main)
 }
 .skills__logos {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around;
-    background-color: var(--darkgrey);
-    padding: 2em;
-    border-radius: 40px;
-    border: 4px var(--pink) solid;
-    margin: 8%;
-    
+    margin-bottom: 2.5em;
 }
 .skills__logo {
-    margin: 8%;
-   
+    padding: 1em;
+    margin: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.skills__html {
-    background-image: url('../assets/technologiesLogos/htmlLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.skills__css {
-    background-image: url('../assets/technologiesLogos/cssLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.skills__js {
-    background-image: url('../assets/technologiesLogos/javaScriptLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.skills__react {
-    background-image: url('../assets/technologiesLogos/reactLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.skills__node {
-    background-image: url('../assets/technologiesLogos/nodeLogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
-.skills__materialui {
-    background-image: url('../assets/technologiesLogos/materialUILogo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 40px;
-    width: 70px;
-}
+
 @media (min-width: 750px) {
-    .skills__logo {
-        margin: 4% 8%
-    }
     .skills__header {
         margin: -5rem auto 1rem auto;
     }
 
 }
 @media (min-width: 986px) {
-    .skills__logo {
-        margin: 2% 4%
-    }
     .skills__header {
         margin: -7rem auto 1rem auto;
+        width: 16rem;
     }
     .skills__header-text {
-        padding-top: 2rem;
-        font-size: x-large;
+        padding-top: 1.4rem;
+        font-size: 44px;
+    }
+    .skills__logos {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
+        margin-bottom: 1em;
     }
 }

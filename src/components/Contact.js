@@ -12,8 +12,8 @@ function Contact(props) {
   const clearMessageIsSend = () => setMessageIsSend(false)
   return (
     <section id="contact" className="contact__bg-image">
-      <div className="contact">
-        <Card>
+     
+        <div className="contact__main">
           <div className="contact__header">
             <div className="contact__text">Contact</div>
   
@@ -22,8 +22,8 @@ function Contact(props) {
            ? <ContactForm onMessageSend={()=> setMessageIsSend(true)}/>
            : <AfterMessageInfo clearMessageIsSend={clearMessageIsSend}/>
           }
-        </Card>
-      </div>
+        </div>
+     
     </section>
   );
 }

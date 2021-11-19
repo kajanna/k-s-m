@@ -3,14 +3,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     box-shadow: var(--shadow);
-    background-color: rgba(255, 254, 254, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 4%;
     padding: 4%;
-    border-radius: 40px;
+    border-radius: 18px;
     z-index: 3;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    border: 2px #fff solid; 
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px #fff solid; 
 }
 .card:hover {
     background-color: #fff

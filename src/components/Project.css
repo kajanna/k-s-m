@@ -1,6 +1,5 @@
 .project {
     display: flex;
-    margin: 2%;
 }
 .project__img {
     background-repeat: no-repeat;

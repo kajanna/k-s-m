@@ -1,14 +1,17 @@
 .button {
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem;
     cursor: pointer;
-    font-size: large;
-    margin: 1rem auto;
-    border-radius:  40px;
-    width: 200px;
+    font-size: x-large;
+    border-radius:  18px;
+    width: 100%;
+    border: 3px solid var(--main);
+    color: var(--main);
+    background-color: #fff;
+    box-shadow: 0px 0px 4px var(--main);
 }
 .button:hover {
-    border: 3px solid var(--darkgrey);
-    color: var(--darkgrey)
+    border: 3px solid var(--main);
+    color: var(--main)
 }
 .button-white {
     border: 3px solid #fff;
