@@ -6,22 +6,11 @@
     transform: translateY(-100%);
     position: fixed;
     margin: 0;
-    height: 5rem;
+    height: 4rem;
 }
-.animated-nav-bar__blob {
-    background-repeat: no-repeat;
-    position: absolute;
-    margin: 1% 2%;
-    width: 30%;
-    height: 30%;
-    z-index: 2;
-    display: none;
-}
+
 @media (min-width: 986px) {
     .animated-nav-bar {
-        height: 10rem;
+        height: 6rem;
     }
-    .animated-nav-bar__blob {
-        display: block;
-    } 
 }

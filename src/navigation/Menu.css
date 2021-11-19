@@ -4,9 +4,9 @@
 }
 .menu li {
     list-style-type: none;
-    margin: 4% auto 4% 16%;
     font-size: larger;
-    color: var(--brown);
+    color: #fff;
+    margin: 1rem
 }
 .menu a {
     text-decoration: none;
@@ -19,20 +19,20 @@
     }
     .menu li {
         display: inline;
-        margin: 3%;
     }
     .menu a {
         font-size: x-large;
-        color: #fff;
-        padding: 4px 12px;
-        border: 3px solid transparent
+        padding: 4px 18px;
+        border: 3px solid transparent;
+        border-radius: 30px;
+        transition: all 0.5s ease-out;
     }
     .menu a:hover {
         cursor: pointer;
         background-color: rgba(71, 41, 12, 0.1);
-        color: #fff;
-        border-radius: 30px;
-        border: 3px solid#fff;
+        color: var(--lightmain);
+        border: 3px solid var(--lightmain);
+        box-shadow: 0 0 18px var(--lightmain);
     }
     .menu__line {
         display: none;

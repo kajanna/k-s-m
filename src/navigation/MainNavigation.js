@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { gsap }from 'gsap';
 
-import { ReactComponent as LinkedIn } from '../assets/my_linked_in.svg'
-import { ReactComponent as GitHub } from '../assets/my_github.svg'
 import Drawer from './Drawer'
 import Menu from './Menu';
 import OnHoverScale from '../shered/OnHoverScale';
@@ -46,28 +44,6 @@ function MainNavigation(props) {
           <div className="main-navigation__items">
             <div className="main-navigation__menu-item">
               <Menu />
-            </div>
-            <div className="main-navigation--logo">
-              <OnHoverScale>
-                <a
-                  href="https://www.linkedin.com/in/kaja-szokalska-mas%C5%82yk-1a816b204"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <LinkedIn />
-                </a>
-              </OnHoverScale>
-            </div>
-            <div className="main-navigation--logo">
-              <OnHoverScale>
-                <a
-                  href="https://github.com/kajanna"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <GitHub />
-                </a>
-              </OnHoverScale>
             </div>
           </div>
         </div>

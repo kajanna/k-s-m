@@ -1,9 +1,28 @@
 .welcome {
   width: 100%;
   height: auto;
-  padding-top: 80px;
   background-color: var(--darkgrey);
-  margin-bottom: -6px;
+  position: relative;
+}
+.main-navigation__logo-section {
+  position: absolute;
+  top: 1rem;
+  right: 1rem
+}
+.main-navigation__logo {
+  height: 28px;
+  width: 28px;
+  margin-left: 1rem;
+  display: inline-block;
+}
+@media (min-width: 986px) {
+  .main-navigation__logo-section {
+    top: 6rem;
+    right: 3.5rem
+  }
+  .main-navigation__logo {
+    margin-left: 2rem;
+  }
 } 
 @media (min-width: 1500px) {
   .welcome {

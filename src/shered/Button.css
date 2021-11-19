@@ -8,10 +8,15 @@
     color: var(--main);
     background-color: #fff;
     box-shadow: 0px 0px 4px var(--main);
+    transition: all 0.2s linear;
 }
 .button:hover {
-    border: 3px solid var(--main);
-    color: var(--main)
+    font-weight: 800;
+    box-shadow: 0px 0px 20px var(--main);
+    color: #fff;
+    border: 3px solid var(--lightmain);
+    text-shadow: var(--shadow);
+    background-image: linear-gradient( var(--lightmain), var(--main));
 }
 .button-white {
     border: 3px solid #fff;

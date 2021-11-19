@@ -8,7 +8,7 @@ function Footer(props) {
         <div className="footer">
             <HashLink smooth to="/#top">
             <div className="footer__nav-element">
-                <div className="footer__arrow"></div>
+                &#94;
             </div>
             </HashLink>
             <p>copyright by Kaja Szokalska 2021</p>

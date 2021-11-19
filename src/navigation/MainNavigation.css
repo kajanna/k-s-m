@@ -5,7 +5,7 @@
     margin: 0;
 }
 .main-navigation__nav-bar {
-    margin: 2em;
+    margin: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,28 +30,18 @@
 .main-navigation__menu-item {
     display: none;
 }
-.main-navigation--logo {
-    height: 28px;
-    width: 28px;
-    margin-left: 2em;
-}
-.main-navigation--logo:hover{
-    cursor: pointer;
-}
 @media (min-width: 986px) {
     .main-navigation__nav-bar {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         color:white;
+        margin: 2rem;
     }
     .main-navigation__hamburger-menu  {
         display: none;
     }
     .main-navigation__menu-item {
         display: inline;
-    }
-    .main-navigation--logo {
-        margin-top: 8%;
     }
 }
