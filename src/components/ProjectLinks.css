@@ -1,31 +1,21 @@
 .project-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 8%;
+    justify-content: flex-end;
+    margin-top: 2%;
 }
-.project-links__item {
+.project-links a {
+    margin: 8px;
     background-color: var(--grey);
-    height: 2rem;
-    width: 2rem;
+    height: 36px;
+    width: 36px;
     padding: 8px;
     border-radius: 8px;
+    transition: all 0.5s ease
 }
-.project-links__item:hover {
-    background-color: var(--darkgrey);
+.project-links a:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(var(--lightmain), var(--main));
     cursor: pointer;
-}
-@media (min-width: 750px) {
-    .project-links {
-        margin: 0%;
-        justify-content: flex-end;
-    }
-    .project-links__item {
-        margin: 1rem;
-    }
-}
-@media (min-width: 986px) {
-    .project-links__item {
-        margin: 0.5rem;
-    }
+    box-shadow: var(--shadow);
 }

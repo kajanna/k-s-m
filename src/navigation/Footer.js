@@ -6,11 +6,14 @@ import './Footer.css'
 function Footer(props) {
     return (
         <div className="footer">
-            <HashLink smooth to="/#top">
             <div className="footer__nav-element">
+            <HashLink smooth to="/#top">
+            <div className="footer__nav-element--bg">
                 &#94;
-            </div>
+                </div>
+           
             </HashLink>
+            </div>
             <p>copyright by Kaja Szokalska 2021</p>
         </div>
     );

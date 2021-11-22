@@ -8,23 +8,23 @@ function Menu(props) {
     return (
       <div className="menu">   
         <ul>
-        <li><HashLink smooth to="/#home">home</HashLink></li>
+        <li><HashLink className="menu_link" smooth to="/#home">home</HashLink></li>
           <div className="menu__line">
 
           </div>
-          <li><HashLink smooth to="/#about">about</HashLink></li>
+          <li><HashLink className="menu_link" smooth to="/#about">about</HashLink></li>
           <div className="menu__line">
          
           </div>
-          <li><HashLink smooth to="/#projects">projects</HashLink></li>
+          <li><HashLink className="menu_link" smooth to="/#projects">projects</HashLink></li>
           <div className="menu__line">
          
           </div>
-          <li><HashLink smooth to="/#skills">skills</HashLink></li>
+          <li><HashLink className="menu_link" smooth to="/#skills">skills</HashLink></li>
           <div className="menu__line">
     
           </div>
-          <li><HashLink smooth to="/#contact">contact</HashLink></li>
+          <li><HashLink className="menu_link" smooth to="/#contact">contact</HashLink></li>
         </ul>
       </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import OnHoverScale from '../shered/OnHoverScale';
 import { ReactComponent as GitHub } from '../assets/my_github.svg'
 import { ReactComponent as OpenInBrowser } from '../assets/openInBrowser.svg'
 
@@ -10,35 +9,19 @@ function ProjectLinks(props) {
   const { feLink, beLink, pageLink } = props;
   return (
     <div className="project-links">
-      <OnHoverScale>
-        <div className="project-links__item">
-          <a href={feLink} 
-            target="_blank"
-            rel="noreferrer">
-            <GitHub />
-          </a>
-        </div>
-      </OnHoverScale>
+      <a href={feLink} target="_blank" rel="noreferrer">
+        <GitHub />
+      </a>
       {beLink && (
-        <OnHoverScale>
-          <div className="project-links__item">
-            <a href={beLink} 
-            target="_blank"
-            rel="noreferrer">
-              <GitHub />
-            </a>
-          </div>
-        </OnHoverScale>
+        <a href={beLink} target="_blank" rel="noreferrer">
+          <GitHub />
+        </a>
       )}
-      { pageLink && <OnHoverScale>
-        <div className="project-links__item">
-          <a href={pageLink} 
-          target="_blank"
-          rel="noreferrer">
-            <OpenInBrowser />
-          </a>
-        </div>
-      </OnHoverScale>}
+      {pageLink && (
+        <a href={pageLink} target="_blank" rel="noreferrer">
+          <OpenInBrowser />
+        </a>
+      )}
     </div>
   );
 }
