@@ -7,15 +7,15 @@
     border: 3px solid var(--main);
     color: var(--main);
     background-color: #fff;
-    box-shadow: 0px 0px 4px var(--main);
     transition: all 0.2s linear;
 }
 .button:hover {
-    box-shadow: var(--shadow);
     color: #fff;
-    border: 3px solid var(--lightmain);
-    text-shadow: var(--shadow);
+    font-weight: 900;
+    transform: scale(1.1);
+    border: none;
     background-image: linear-gradient( var(--lightmain), var(--main));
+    box-shadow: var(--shadow);
 }
 .button-white {
     border: 3px solid #fff;

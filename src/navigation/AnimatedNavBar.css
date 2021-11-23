@@ -1,12 +1,18 @@
 .animated-nav-bar {
     width: 100%;
-    z-index: -5;
+    z-index: -4;
     background-color: var(--darkgrey);
-    box-shadow: none;
-    transform: translateY(-100%);
     position: fixed;
     margin: 0;
     height: 72px;
+    transition: all 0.8s ease-out;
+    box-shadow: var(--shadow);
+    border-bottom: 3px solid var(--main);
+}
+
+.animated-nav-bar--hidden {
+    transform: translateY(-100%);
+    box-shadow: none;
 }
 
 @media (min-width: 986px) {

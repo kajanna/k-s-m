@@ -8,7 +8,7 @@
     --grey: #AAAAAA;
     --main: #00EAD3;
     --lightmain: #88FFF7;
-    --shadow: 0px 0px 12px rgb(36, 4, 4, 0.3);
+    --shadow: 0px 2px 4px rgb(36, 4, 4, 0.6);
     --error: #FF005C;
 }
 *:focus {

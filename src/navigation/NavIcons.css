@@ -3,12 +3,30 @@
     flex-direction: row;
     justify-content: flex-end;
   }
-  .nav-icons__logo {
+  .nav-icons__logo a {
     height: 24px;
     width: 24px;
-    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
     display: inline-block;
+    padding: 8px;
+    transition: all 0.5s ease-out;
   }
+  .nav-icons__logo--squere a {
+    border-radius: 4px;
+  }
+  .nav-icons__logo--circle a {
+    border-radius: 50%;
+  }
+
+  .nav-icons__logo a:hover {
+    transform: scale(1.5);
+    border: 2px solid var(--lightmain);
+    box-shadow: 0 0 10px var(--lightmain);
+  }
+
   @media (min-width: 986px) {
     .nav-icons__logo {
       margin-left: 2rem;

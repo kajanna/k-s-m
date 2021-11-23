@@ -8,7 +8,7 @@ import './NavIcons.css'
 function NavIcons(props) {
     return (
         <div className="nav-icons__logo-section">
-        <div className="nav-icons__logo">
+        <div className="nav-icons__logo nav-icons__logo--squere">
           <a
             href="https://www.linkedin.com/in/kaja-szokalska-mas%C5%82yk-1a816b204"
             target="_blank"
@@ -17,7 +17,7 @@ function NavIcons(props) {
             <LinkedIn />
           </a>
         </div>
-        <div className="nav-icons__logo">
+        <div className="nav-icons__logo nav-icons__logo--circle">
           <a href="https://github.com/kajanna" target="_blank" rel="noreferrer">
             <GitHub />
           </a>
