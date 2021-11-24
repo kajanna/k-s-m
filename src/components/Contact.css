@@ -1,6 +1,7 @@
 .contact__bg-image {
+    margin-top: -0.5rem;
     background-color: var(--darkgrey); 
-    padding: 4% 2%;
+    padding: 8% 2% 12%;
 }
 .contact__main {
     display: flex;

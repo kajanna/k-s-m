@@ -82,9 +82,7 @@ function ContactForm(props) {
           type="text"
           large
         />
-        <div className="contact-form__button">
-          <Button type="submit" text="submit" />
-        </div>
+          <button className="contact-form__button" type="submit">submit</button>
       </Form>
       </div>
       </FormikProvider>

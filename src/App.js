@@ -14,20 +14,22 @@ import './App.css';
 function App() {
   gsap.registerPlugin(ScrollTrigger);
 
-  return ( 
-  <>
-    <Switch>
-      <Route exact path="/">
-      <MainNavigation />
-      <WelcomeScreen /> 
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-      </Route>
-      <Redirect to="/"/>
-    </Switch>
+  return (
+    <>
+      <Switch>
+        <Route exact path="/">
+          <MainNavigation />
+          <div className="main">
+            <WelcomeScreen />
+            <About />
+            <Projects />
+            <Skills />
+            <Contact />
+            <Footer />
+          </div>
+        </Route>
+        <Redirect to="/" />
+      </Switch>
     </>
   );
 }
