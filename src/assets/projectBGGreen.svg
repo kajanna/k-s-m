@@ -2,135 +2,99 @@
   <defs>
     <style>
       .cls-1 {
-        fill: url(#Gradient_bez_nazwy_2);
+        fill: url(#Gradient_bez_nazwy_35);
       }
 
       .cls-2 {
-        fill: url(#Gradient_bez_nazwy_835);
+        fill: url(#Gradient_bez_nazwy_17);
       }
 
       .cls-3 {
-        fill: url(#Gradient_bez_nazwy_835-2);
+        fill: url(#Gradient_bez_nazwy_46);
       }
 
       .cls-4 {
-        fill: url(#Gradient_bez_nazwy_835-3);
+        fill: url(#Gradient_bez_nazwy_43);
       }
 
       .cls-5 {
-        fill: url(#Gradient_bez_nazwy_835-4);
+        fill: url(#Gradient_bez_nazwy_43-2);
       }
 
       .cls-6 {
-        fill: url(#Gradient_bez_nazwy_835-5);
+        fill: url(#Gradient_bez_nazwy_17-2);
       }
 
       .cls-7 {
-        fill: url(#Gradient_bez_nazwy_835-6);
+        fill: url(#Gradient_bez_nazwy_17-3);
       }
 
       .cls-8 {
-        fill: url(#Gradient_bez_nazwy_835-7);
+        fill: url(#Gradient_bez_nazwy_43-3);
       }
 
       .cls-9 {
-        fill: url(#Gradient_bez_nazwy_835-8);
+        fill: url(#Gradient_bez_nazwy_43-4);
       }
 
       .cls-10 {
-        fill: url(#Gradient_bez_nazwy_835-9);
+        fill: url(#Gradient_bez_nazwy_48);
       }
 
       .cls-11 {
-        fill: url(#Gradient_bez_nazwy_835-10);
+        fill: url(#Gradient_bez_nazwy_17-4);
       }
 
       .cls-12 {
-        fill: url(#Gradient_bez_nazwy_835-11);
-      }
-
-      .cls-13 {
-        fill: url(#Gradient_bez_nazwy_835-12);
-      }
-
-      .cls-14 {
-        fill: url(#Gradient_bez_nazwy_835-13);
-      }
-
-      .cls-15 {
-        fill: url(#Gradient_bez_nazwy_835-14);
-      }
-
-      .cls-16 {
-        fill: url(#Gradient_bez_nazwy_835-15);
-      }
-
-      .cls-17 {
-        fill: url(#Gradient_bez_nazwy_835-16);
-      }
-
-      .cls-18 {
-        fill: url(#Gradient_bez_nazwy_835-17);
-      }
-
-      .cls-19 {
-        fill: url(#Gradient_bez_nazwy_835-18);
-      }
-
-      .cls-20 {
-        fill: url(#Gradient_bez_nazwy_835-19);
+        fill: url(#Gradient_bez_nazwy_39);
       }
     </style>
-    <radialGradient id="Gradient_bez_nazwy_2" data-name="Gradient bez nazwy 2" cx="436" cy="604.904" r="397.153" gradientTransform="translate(0 -251.79)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Gradient_bez_nazwy_35" data-name="Gradient bez nazwy 35" x1="436" y1="251.234" x2="436" y2="958.575" gradientTransform="translate(0 -251.79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.005" stop-color="#404040"/>
+      <stop offset="0.152" stop-color="#3d4644"/>
+      <stop offset="0.34" stop-color="#355650"/>
+      <stop offset="0.551" stop-color="#287064"/>
+      <stop offset="0.776" stop-color="#16947f"/>
+      <stop offset="1" stop-color="#00c09f"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_17" data-name="Gradient bez nazwy 17" x1="64.633" y1="564.099" x2="-114.052" y2="415.745" gradientTransform="matrix(-0.549, -0.781, 0.754, -0.347, 9.499, 359.519)" gradientUnits="userSpaceOnUse">
       <stop offset="0.005" stop-color="#fff"/>
-      <stop offset="0.192" stop-color="#a7e3a9"/>
-      <stop offset="0.525" stop-color="#4fd6b5"/>
-      <stop offset="0.872" stop-color="#00c09f"/>
-    </radialGradient>
-    <linearGradient id="Gradient_bez_nazwy_835" data-name="Gradient bez nazwy 835" x1="87.735" y1="690.335" x2="-125.713" y2="585.297" gradientTransform="matrix(-0.469, -0.637, 0.632, -0.4, 41.73, 380.488)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-2" data-name="Gradient bez nazwy 835" x1="619.692" y1="226.451" x2="883.848" y2="226.451" gradientTransform="matrix(-0.94, 0.314, -0.679, -0.655, 1088.58, 494.553)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-3" data-name="Gradient bez nazwy 835" x1="239.428" y1="525.036" x2="12.873" y2="413.548" gradientTransform="matrix(-0.729, 0.711, 0.721, 0.511, 397.86, 231.583)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-4" data-name="Gradient bez nazwy 835" x1="-576.304" y1="-61.005" x2="-525.943" y2="85.851" gradientTransform="matrix(-0.946, 0.324, 0.324, 0.946, -53.287, 508.157)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-5" data-name="Gradient bez nazwy 835" x1="-244.733" y1="1121.299" x2="52.163" y2="1109.9" gradientTransform="matrix(-0.218, 0.962, -0.907, -0.261, 1194.115, 584.93)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-6" data-name="Gradient bez nazwy 835" x1="-593.996" y1="268.115" x2="-253.207" y2="255.031" gradientTransform="matrix(0.496, 0.816, 0.559, -0.562, 742.762, 677.681)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-7" data-name="Gradient bez nazwy 835" x1="-299.852" y1="1117.81" x2="-46.418" y2="1117.81" gradientTransform="matrix(-0.44, 0.498, 0.443, 0.485, 195.418, -47.529)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-8" data-name="Gradient bez nazwy 835" x1="-262.265" y1="-136.364" x2="-201.334" y2="41.314" gradientTransform="matrix(-0.946, 0.324, 0.324, 0.946, -53.287, 508.157)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-9" data-name="Gradient bez nazwy 835" x1="391.165" y1="393.492" x2="391.165" y2="175.727" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-10" data-name="Gradient bez nazwy 835" x1="634.246" y1="434.219" x2="634.246" y2="392.372" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-11" data-name="Gradient bez nazwy 835" x1="505.8" y1="187.43" x2="505.8" y2="89.004" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-12" data-name="Gradient bez nazwy 835" x1="555.084" y1="347.547" x2="555.084" y2="281.23" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-13" data-name="Gradient bez nazwy 835" x1="810.857" y1="284.453" x2="810.857" y2="211.279" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-14" data-name="Gradient bez nazwy 835" x1="651.477" y1="313.088" x2="651.477" y2="285.368" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-15" data-name="Gradient bez nazwy 835" x1="173.925" y1="592.96" x2="173.925" y2="475.349" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-16" data-name="Gradient bez nazwy 835" x1="68.966" y1="285.328" x2="68.966" y2="234.538" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-17" data-name="Gradient bez nazwy 835" x1="792.13" y1="673.07" x2="792.13" y2="605.036" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-18" data-name="Gradient bez nazwy 835" x1="106.521" y1="211.174" x2="106.521" y2="93.588" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
-    <linearGradient id="Gradient_bez_nazwy_835-19" data-name="Gradient bez nazwy 835" x1="694.928" y1="585.407" x2="694.928" y2="454.271" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_2"/>
+      <stop offset="0.525" stop-color="#88fff7"/>
+      <stop offset="1" stop-color="#00c09f"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_46" data-name="Gradient bez nazwy 46" x1="632.908" y1="405.193" x2="816.718" y2="150.895" gradientTransform="matrix(-0.94, 0.314, -0.679, -0.655, 1088.58, 494.553)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.525" stop-color="#88fff7"/>
+      <stop offset="1" stop-color="#00c09f"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_43" data-name="Gradient bez nazwy 43" x1="56.796" y1="389.644" x2="229.865" y2="564.431" gradientTransform="matrix(-0.729, 0.711, 0.721, 0.511, 397.86, 231.583)" xlink:href="#Gradient_bez_nazwy_46"/>
+    <linearGradient id="Gradient_bez_nazwy_43-2" data-name="Gradient bez nazwy 43" x1="-623.086" y1="2.524" x2="-453.565" y2="-14.36" gradientTransform="matrix(0.099, 0.995, 0.995, -0.099, 513.261, 863.032)" xlink:href="#Gradient_bez_nazwy_46"/>
+    <linearGradient id="Gradient_bez_nazwy_17-2" x1="39.56" y1="1019.022" x2="-134.885" y2="1251.469" gradientTransform="matrix(0.755, -0.636, 0.566, 0.755, -446.866, -693.663)" xlink:href="#Gradient_bez_nazwy_17"/>
+    <linearGradient id="Gradient_bez_nazwy_17-3" x1="-501.261" y1="378.236" x2="-244.004" y2="149.637" gradientTransform="matrix(0.496, 0.816, 0.559, -0.562, 742.762, 677.681)" xlink:href="#Gradient_bez_nazwy_17"/>
+    <linearGradient id="Gradient_bez_nazwy_43-3" data-name="Gradient bez nazwy 43" x1="-307.922" y1="917.678" x2="-120.468" y2="1103.678" gradientTransform="matrix(-0.44, 0.498, 0.443, 0.485, 195.418, -47.529)" xlink:href="#Gradient_bez_nazwy_46"/>
+    <linearGradient id="Gradient_bez_nazwy_43-4" data-name="Gradient bez nazwy 43" x1="-319.653" y1="-140.624" x2="-258.723" y2="37.054" gradientTransform="matrix(-0.946, 0.324, 0.324, 0.946, -53.287, 508.157)" xlink:href="#Gradient_bez_nazwy_46"/>
+    <linearGradient id="Gradient_bez_nazwy_48" data-name="Gradient bez nazwy 48" x1="613.974" y1="348.761" x2="613.974" y2="231.15" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_46"/>
+    <linearGradient id="Gradient_bez_nazwy_17-4" x1="587.693" y1="592.964" x2="587.693" y2="482.004" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" xlink:href="#Gradient_bez_nazwy_17"/>
+    <linearGradient id="Gradient_bez_nazwy_39" data-name="Gradient bez nazwy 39" x1="403.368" y1="430.003" x2="403.368" y2="178.174" gradientTransform="matrix(1, 0, 0, -1, 0, 766.38)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#88fff7"/>
+      <stop offset="1" stop-color="#00c09f"/>
+    </linearGradient>
   </defs>
   <g id="Warstwa_2" data-name="Warstwa 2">
     <rect class="cls-1" x="-0.324" y="-0.556" width="872.649" height="707.341"/>
   </g>
   <g id="Warstwa_1" data-name="Warstwa 1">
-    <path class="cls-2" d="M490.474,47.328c-31.195-3.112-91.756,4.286-130.042,16.728-38.448,12.73-57.968,52.186-37.908,97.42s43.094-5.528,83.289,1.36,24.555,32.2,74.657,54.608c50.416,22.582,93.923-28.323,104.334-73.718C601.173,73.212,548.852,53.151,490.474,47.328Z"/>
-    <path class="cls-3" d="M403.889,619c18.374-41.337-38.422-54.747-62.658-19.666-22.6,32.718-50.168,18.091-74.687,9.219-92.542-42.3,51.388-43.2,37.742-68.154-8.426-35.914-59.139-67.049-102.55-68.519-46.611-.47-40.6,24.956-18.6,48.009,56.919,39.451-157.679,85.742-22.717,145.536C278.629,717.8,377.048,658.4,403.889,619Z"/>
+    <path class="cls-2" d="M440.377,123.708c-36.937-8.291-108.794-9.429-154.307-1.5-45.709,8.22-69.281,49.118-46.009,102.574s51.134.516,98.7,14.4,28.743,39.648,87.873,72.34c59.5,32.939,111.63-16.992,124.472-65.911C571.287,169.652,509.5,139.225,440.377,123.708Z"/>
+    <path class="cls-3" d="M371.013,578.186c19.629-44.16-41.045-58.486-66.936-21.008-24.146,34.951-53.593,19.325-79.787,9.848-98.86-45.19,54.9-46.154,40.32-72.808-9-38.366-63.178-71.627-109.552-73.2-49.794-.5-43.371,26.661-19.867,51.288C196,514.452-33.255,563.9,110.923,627.78,237.2,683.727,342.34,620.276,371.013,578.186Z"/>
     <path class="cls-4" d="M822.38,563.62C818.32,506.568,770.8,440.2,697.77,464.4c-72.565,24-57.025,56.561-112.8,62.079s-75.694-59.135-112.732-4.573-19.375,104.938,29.724,123.606c48.942,18.3,129.064,32.022,171.86,30.509C753.907,673.191,828.951,652.257,822.38,563.62Z"/>
-    <path class="cls-5" d="M546.413,323.2c-25.986-31.585-40.541,39.936-69.959,23.962s35.326-50.354-10.55-75.878c-32.466-18.02-46.36-4.092-75.052,35.029-20.331,27.68,3.785,106.682,51.993,111.918C491.285,423.611,599.022,387.405,546.413,323.2Z"/>
-    <path class="cls-6" d="M122.41,71.072c53.949-28.72,141.886-30.11,162.975,38,21,67.651-17.57,74.147,10.257,118.947s97.972,23.714,70.451,81.8S282.655,382.719,236.9,356.377C191.568,329.948,35.56,317.305,21.332,241.591S38.439,115.493,122.41,71.072Z"/>
-    <path class="cls-7" d="M692.4,14.079c-56.046-8.724-129,25.415-118.777,106.466,10.118,80.526,44.5,71.82,39.736,130.786S542.3,316.26,588.487,366.945s98.22,43.822,125.219-2.755c26.613-46.5,149.924-123.148,130.97-209.517S779.517,27.358,692.4,14.079Z"/>
-    <path class="cls-8" d="M766.435,306.249c37.375-4.564,38.683,28.739,5.475,37.4-30.97,8.08-23.617,25.346-20.5,40.142,19.056,57.043,44.609-22.608,62.9-11.653,28.267,9.553,45.292,41.894,39.027,66.155-7.645,25.9-27.649,19.108-42.934,3.78-22.837-36.911-98.13,75.737-124.351-7.2C663.091,362.243,729.205,315.769,766.435,306.249Z"/>
-    <path class="cls-9" d="M240.5,366.314c-31.439-38.214-49.049,48.318-84.641,28.991s42.74-60.922-12.765-91.8c-39.279-21.8-56.09-4.952-90.8,42.38-24.6,33.49,4.579,129.072,62.906,135.408C173.806,487.8,304.155,443.994,240.5,366.314Z"/>
-    <circle class="cls-10" cx="391.165" cy="481.927" r="109.039"/>
+    <path class="cls-5" d="M457.771,249.884c-36.7,18.061,29.589,48.61,7.3,73.587s-40.924-45.919-76.276-7.109c-24.978,27.475-14.6,44.191,16.907,81.08,22.288,26.13,104.713,20.751,120.852-24.977C542.886,326.545,532.319,213.379,457.771,249.884Z"/>
+    <path class="cls-6" d="M129.064,332.667C80.911,324.994,24.273,283.575,43.615,230.08c19.182-53.158,46.852-38.739,50.694-80.64S43.36,87.215,88.817,63.488,177,57.224,193.447,96c16.137,38.629,109.349,121.726,81.982,176.761S203.879,344.79,129.064,332.667Z"/>
+    <path class="cls-7" d="M690.646,53.842c-48.01-7.473-110.507,21.771-101.747,91.2,8.667,68.981,38.117,61.523,34.038,112.035s-60.863,55.62-21.3,99.039,84.138,37.538,107.266-2.361c22.8-39.831,128.428-105.492,112.192-179.478S765.276,65.217,690.646,53.842Z"/>
+    <path class="cls-8" d="M735.472,244.7c42.979-5.248,44.484,33.049,6.3,43.011-35.615,9.292-27.159,29.148-23.576,46.163,21.914,65.6,51.3-26,72.339-13.4,32.506,10.986,52.084,48.177,44.879,76.076-8.791,29.782-31.795,21.974-49.373,4.347-26.261-42.447-112.845,87.095-143-8.275C616.629,309.09,692.658,255.646,735.472,244.7Z"/>
+    <path class="cls-9" d="M293.409,343.669c-31.44-38.214-49.049,48.317-84.641,28.991s42.739-60.922-12.765-91.8c-39.28-21.8-56.091-4.951-90.8,42.381C80.6,356.727,109.778,452.31,168.1,458.645,226.71,465.154,357.06,421.349,293.409,343.669Z"/>
   </g>
   <g id="Warstwa_4" data-name="Warstwa 4">
-    <circle class="cls-11" cx="634.246" cy="353.115" r="20.953"/>
-    <circle class="cls-12" cx="505.8" cy="628.233" r="49.284"/>
-    <circle class="cls-13" cx="555.084" cy="452.039" r="33.206"/>
-    <circle class="cls-14" cx="810.857" cy="518.566" r="36.639"/>
-    <circle class="cls-15" cx="651.477" cy="467.172" r="13.88"/>
-    <circle class="cls-16" cx="173.925" cy="232.309" r="58.89"/>
-    <circle class="cls-17" cx="68.966" cy="506.483" r="25.431"/>
-    <circle class="cls-18" cx="792.13" cy="127.375" r="34.066"/>
-    <circle class="cls-19" cx="106.521" cy="614.083" r="58.877"/>
-    <circle class="cls-20" cx="694.928" cy="246.635" r="65.662"/>
+    <circle class="cls-10" cx="613.974" cy="476.509" r="58.89"/>
+    <circle class="cls-11" cx="587.693" cy="228.975" r="55.56"/>
+    <circle class="cls-12" cx="403.368" cy="462.472" r="126.096"/>
   </g>
 </svg>
