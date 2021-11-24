@@ -15,18 +15,6 @@ function MainNavigation(props) {
 
   const openDrawer = () => setShowDrawer(true);
   const closeDrawer = () => setShowDrawer(false);
-  
-  useEffect(()=>{
-    const openingNavBarAnimation = () => gsap.from(navBarMenuRef.current,
-      {
-        delay: 2,
-        y: '-190%',
-      });
-      openingNavBarAnimation();
-      return () => {
-        openingNavBarAnimation.kill()
-      }
-  }, [])
 
   return (
     <>
