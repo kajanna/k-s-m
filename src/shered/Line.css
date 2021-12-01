@@ -9,3 +9,8 @@
     height: 2px;
     background-color: transparent
 }
+@media (min-width: 986px) {
+    .menu__line--start, .menu__line--show {
+        display: none;
+    }   
+}

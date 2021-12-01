@@ -7,14 +7,17 @@
 }
 .welcome__illustrations {
   position: absolute;
-  top: 8rem
+  top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .welcome__nav-icons {
   display: none
 }
 @media (min-width: 750px) {
   .welcome {
-    height: 40rem;
+    height: 55rem;
   }  
 }
 @media (min-width: 986px) {
@@ -22,11 +25,8 @@
     height: 100vh;
   }
   .welcome__illustrations {
-    top: 20%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    
+    top: 15%;
+    height: 85%;   
   }
   .welcome__nav-icons {
     display: inline;

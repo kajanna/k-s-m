@@ -4,7 +4,7 @@
 }
 .menu li {
     list-style-type: none;
-    color: #fff;;
+    color: #fff;
     margin: 1rem
 }
 .menu a {
@@ -13,7 +13,7 @@
     font-size: medium;
 }
 
-@media (min-width: 986px) {
+@media (min-width: 886px) {
     .menu {
         flex-direction: row;
     }
@@ -22,7 +22,7 @@
     }
     .menu a {
         font-size: x-large;
-        padding: 4px 18px;
+        padding: 8px 18px;
         border: 3px solid transparent;
         border-radius: 30px;
         transition: all 0.5s ease-out;
