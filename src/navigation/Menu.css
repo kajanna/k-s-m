@@ -4,13 +4,13 @@
 }
 .menu li {
     list-style-type: none;
-    font-size: larger;
-    color: #fff;
+    color: #fff;;
     margin: 1rem
 }
 .menu a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
+    font-size: medium;
 }
 
 @media (min-width: 986px) {

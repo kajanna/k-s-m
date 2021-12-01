@@ -1,6 +1,6 @@
 .contact__bg-image {
     margin-top: -0.5rem;
-    background-color: var(--darkgrey); 
+    background-image: url('../assets/welcome_bg.jpg');
     padding: 8% 2% 12%;
 }
 .contact__main {

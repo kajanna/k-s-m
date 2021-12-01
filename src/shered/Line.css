@@ -1,0 +1,11 @@
+.menu__line--show {
+    height: 2px;
+    width: 90%;
+    background-color: var(--lightmain);
+    transition: all 0.4s linear;
+}
+.menu__line--start {
+    width: 0%;
+    height: 2px;
+    background-color: transparent
+}

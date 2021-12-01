@@ -5,8 +5,9 @@
     position: fixed;
     padding: 0;
     margin: 0;
-    height: 72px;
+    height: 82px;
     transition: all 0.8s ease-out;
+    z-index: 10;
 }
 .animated-nav-bar--hidden {
     transform: translateY(-100%);

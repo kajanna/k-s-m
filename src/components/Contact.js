@@ -1,8 +1,8 @@
 import React,  {useState } from 'react';
 
-import Card from '../shered/Card';
 import ContactForm from './ContactForm';
 import AfterMessageInfo from './AfterMessageInfo';
+import Line from '../shered/Line';
 
 import './Contact.css'
 
@@ -16,6 +16,7 @@ function Contact(props) {
         <div className="contact__main">
           <div className="contact__header">
             <div className="contact__text">Contact</div>
+            <Line />
   
           </div>
           {!messageIsSend 

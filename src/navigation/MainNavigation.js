@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { gsap }from 'gsap';
+import React, { useState } from 'react';
 
 import Drawer from './Drawer'
 import Menu from './Menu';
@@ -11,17 +10,17 @@ import  './MainNavigation.css';
 function MainNavigation(props) {
 
   const [ showDrawer, setShowDrawer ] = useState(false);
-  const navBarMenuRef = useRef();
 
   const openDrawer = () => setShowDrawer(true);
   const closeDrawer = () => setShowDrawer(false);
 
   return (
     <>
-      {showDrawer && <Drawer onClose={closeDrawer} />}
+     <Drawer onClose={closeDrawer} showDrawer={showDrawer}/>
+      <AnimatedNavBar />
       <div className="main-navigation">
-        <AnimatedNavBar />
-        <div className="main-navigation__nav-bar" ref={navBarMenuRef}>
+        
+        <div className="main-navigation__nav-bar">
           <div className="main-navigation__hamburger-menu" onClick={openDrawer}>
               <div className="main-navigation__hamburger-menu--elements"></div>
               <div className="main-navigation__hamburger-menu--elements"></div>
@@ -32,7 +31,7 @@ function MainNavigation(props) {
               <NavIcons />
             </div>
             <div className="main-navigation__menu-item">
-              <Menu />
+              <Menu showLines={showDrawer}/>
             </div>
           </div>
         </div>

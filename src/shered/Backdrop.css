@@ -1,10 +1,13 @@
 .backdrop {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     height: 100%;
     width: 100%;
     z-index: 28;
-    transform: translate(-130%)
+    transition: transform .3s linear;
+}
+.backdrop--close {
+    transform: translateX(-100%);
 }

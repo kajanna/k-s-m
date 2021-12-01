@@ -13,7 +13,7 @@
 }
 .main {
     -webkit-overflow-scrolling: touch;
-    overflow-y: scroll !important;
+    overflow-y: scroll;
 }
 
 *:focus {
@@ -30,7 +30,8 @@ a {
 }
 @media (min-width: 960px) {
     .main {
-        overflow-y: auto;
+        -webkit-overflow-scrolling: initial;
+        overflow-y: visible
     }
 }
 

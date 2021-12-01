@@ -1,11 +1,9 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import './Backdrop.css';
 
-const Backdrop = forwardRef((props, ref) => {
-    return (
-        <div className="backdrop" ref={ref} onClick={props.closeBackdrop}></div>
-    );
-})
+const Backdrop = props => {
+    return <div className={props.showBackdrop ? "backdrop" : "backdrop backdrop--close"} onClick={props.closeBackdrop}></div>
+}
 
 export default Backdrop;

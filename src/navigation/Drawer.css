@@ -5,14 +5,18 @@
     padding: 2rem;
     height: 100%;
     width: 40%;
-    box-shadow: none;
-    transform: translate(-130%)
+    transition: transform 0.3s linear;
 }
-.drawer__menu {
-    opacity: 0
+.drawer--close {
+    transform: translateX(-100%);
 }
 @media (min-width: 750px) {
     .drawer {
         width: 30%;
+    }
+}
+@media (min-width: 986px) {
+    .drawer {
+        display: none;
     }
 }

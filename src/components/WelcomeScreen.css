@@ -1,13 +1,33 @@
 .welcome {
   width: 100%;
-  height: auto;
-  background-color: var(--darkgrey);
+  height: 30rem;
+  background: black url('../assets/welcome_bg.jpg') no-repeat center top;
+  background-size: cover;
   position: relative;
 }
+.welcome__illustrations {
+  position: absolute;
+  top: 8rem
+}
 .welcome__nav-icons {
-  display: none;
+  display: none
+}
+@media (min-width: 750px) {
+  .welcome {
+    height: 40rem;
+  }  
 }
 @media (min-width: 986px) {
+  .welcome {
+    height: 100vh;
+  }
+  .welcome__illustrations {
+    top: 20%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    
+  }
   .welcome__nav-icons {
     display: inline;
     position: absolute;

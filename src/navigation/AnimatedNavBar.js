@@ -1,4 +1,3 @@
-import { _colorStringFilter } from 'gsap/gsap-core';
 import React, { useState } from 'react';
 
 import './AnimatedNavBar.css'
@@ -9,7 +8,6 @@ function AnimatedNavBar(props) {
     
   const changeBackground = () => {
       if (window.scrollY >= 72) {
-        console.log(window.scrollY)
         setShowNavBar(true);
       } else {
         setShowNavBar(false);
