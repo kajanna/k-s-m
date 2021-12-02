@@ -13,6 +13,10 @@ function WelcomeScreen(props) {
         <NavIcons />
       </div>
       <div className="welcome__illustrations" >
+        <div className="welcome__text"> 
+        <h2>I'm Kaja.</h2>
+        <p>Junior React<br></br>Developer</p>
+        </div>
       <WelcomeBG />
       </div>
     </div>

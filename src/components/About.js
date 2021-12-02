@@ -11,7 +11,7 @@ function About(props) {
       <div className="about__content">
      
           <div>
-              <div className="about__header">Hi!</div>
+              <div className="about__header"><div>Hi</div><div className="about__header--animate">!</div></div>
             <p className="about__content-text" >
               I'm ex-graphic designer and DTP operator. About 1,5 year ago I 
               decided to change my career path. I learned basics from Udemy

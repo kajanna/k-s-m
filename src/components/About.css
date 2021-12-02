@@ -6,15 +6,18 @@
     padding: 4%  8% 8%;
 }
 .about__header {
-  margin: 4% auto;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-weight: bold;
   font-size: 54px;
-  color: var(--main)
+  color: var(--lightmain);
 }
-
+.about__header--animate {
+    animation: header-a 3s linear 1s infinite alternate;
+}
 .about__content p {
-    color: var(--grey);
+    color: #fff;
     margin: 2% 4% 8%;
     text-align: justify;
 }
@@ -55,5 +58,14 @@
     }
     .about__button {
         margin: 0 3em;
+    }
+}
+@keyframes header-a {
+    from, to {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.2);
+        text-shadow: var(--shadow);
     }
 }
