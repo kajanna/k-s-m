@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import { ReactComponent as WelcomeBG } from "../assets/welcomeBGgreen.svg"
+import { ReactComponent as WelcomeBG } from "../assets/welcomeBGgreen.svg";
 import NavIcons from '../navigation/NavIcons'
 
 import './WelcomeScreen.css';
@@ -12,12 +12,14 @@ function WelcomeScreen(props) {
       <div className="welcome__nav-icons">
         <NavIcons />
       </div>
-      <div className="welcome__illustrations" >
-        <div className="welcome__text"> 
-        <h2>I'm Kaja.</h2>
-        <p>Junior React<br></br>Developer</p>
+      <div className="welcome__text">
+          <h2>I'm Kaja.</h2>
+          <p>
+            Junior React Developer
+          </p>
         </div>
-      <WelcomeBG />
+      <div className="welcome__illustrations">
+        <WelcomeBG />
       </div>
     </div>
   );

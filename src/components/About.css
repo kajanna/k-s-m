@@ -1,9 +1,8 @@
 .about {
-    background-color: var(--darkgrey);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4%  8% 8%;
 }
 .about__header {
   display: flex;
@@ -11,37 +10,39 @@
   justify-content: center;
   font-weight: bold;
   font-size: 54px;
-  color: var(--lightmain);
+  color: var(--main);
+  margin-top: 1em;
 }
 .about__header--animate {
-    animation: header-a 3s linear 1s infinite alternate;
+    animation: header-a 3s ease-in-out 1s infinite alternate;
 }
 .about__content p {
-    color: #fff;
-    margin: 2% 4% 8%;
+    color: var(--darkgrey);
+    margin: 4% 16% 12%;
     text-align: justify;
 }
 .about__button-section {
+    background-color: var(--darkgrey);
+    padding: 12% 12% 25% 12%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 2% 8%; 
-
+    align-items: center;   
 }
 .about__button {
     width: 100%;
-    margin: 1em;
+    margin: 1.5em;
 }
 
 @media (min-width: 750px) {
     .about__header {
+        margin-top: .5em;
         font-size: 84px;
     }
-    .about__content p {
-        margin: 2% 26%;
+    .about__content {
+        margin: 4% 24%;
     }
     .about__button-section {
-        margin: 8% 2% 0%;
+        padding: 4% 2%;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -53,7 +54,7 @@
         font-size: 94px;
     }
     .about__content p {
-        margin: 2% 34%;
+        margin: 2% 28%;
         font-size: 18px;
     }
     .about__button {
@@ -65,7 +66,6 @@
         transform: none;
     }
     50% {
-        transform: scale(1.2);
-        text-shadow: var(--shadow);
+        transform: translateY(-6px);
     }
 }
