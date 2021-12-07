@@ -1,50 +1,6 @@
 .contact-form__form {
-    padding: 0.8rem;
+    padding: 0.8rem 1rem 3rem;
 }
 .contact-form__button {
-    margin: 1em 0;
-    width: 100%;
-	height: 46px;
-	border-radius: 18px;
-	color: var(--main);
-	font-size: 18px;
-    border: 1px solid var(--main);
-    box-shadow: 0px 0px 6px var(--main); 
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-    transition: all 0.3s ease-in;
-}
-.contact-form__button:after {
-    content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	z-index: -2;
-}
-.contact-form__button:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: var(--main);
-    z-index: -1;
-    transition: all 0.4s ease-in;
-}
-.contact-form__button:hover {
-    color: #fff;
-    box-shadow: none;
-}
-.contact-form__button:hover:before  {
-    width: 100%;
-}
-@media(min-width: 750px) {
-    .contact-form__button {    
-        padding: 0
-    }
+    margin-top: 2rem;
 }

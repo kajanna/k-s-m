@@ -3,10 +3,12 @@ import { useFormik, FormikProvider, Form } from 'formik';
 import * as Yup from 'yup';
 
 import UserInput from './UserInput';
+import Button from '../shered/Button'
 
 import './ContactForm.css';
 
 function ContactForm(props) {
+
   const [ error, setError ] = useState(null);
 
   const contactSchema = Yup.object().shape({
@@ -24,8 +26,6 @@ function ContactForm(props) {
   });
 
   const sendMessage = async (values) => {
-    console.log(values)
-    console.log(process.env)
     try {
       const response = await fetch(process.env.REACT_APP_SEND_EMAIL_URL, {
         method: "POST",
@@ -34,14 +34,12 @@ function ContactForm(props) {
         },
         body: JSON.stringify(values),
       });
-      console.log(response)
+      console.log(response);
       if (response.status === 200) {
-        props.onMessageSend()
+        props.onMessageSend();
       }
-
     } catch (err) {
-      console.log(error)
-      setError(err);
+      setError(err || "Somthing went wrong.");
     }
   };
 
@@ -81,7 +79,9 @@ function ContactForm(props) {
           type="text"
           large
         />
-          <button className="contact-form__button" type="submit">submit</button>
+        <div className="contact-form__button">
+          <Button type="submit" text="submit" />
+        </div>
       </Form>
       </div>
       </FormikProvider>

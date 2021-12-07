@@ -3,8 +3,17 @@
     flex-direction: column;
     justify-content: center;
 }
+.afterMessageInfo p {
+    text-align: center;
+    margin-top: 1rem;
+}
 .afterMessageInfo__button {
     margin: 3rem 0 2rem 0;
     display: flex;
     justify-content: center;
+}
+@media(min-width: 750px) {
+    .afterMessageInfo p {
+        font-size: larger;
+    }
 }

@@ -22,7 +22,6 @@
     text-align: justify;
 }
 .about__button-section {
-    background-color: var(--darkgrey);
     padding: 12% 12% 25% 12%;
     display: flex;
     flex-direction: column;
@@ -42,7 +41,7 @@
         margin: 4% 24%;
     }
     .about__button-section {
-        padding: 4% 2%;
+        padding: 0% 2% 8%;
         flex-direction: row;
         justify-content: space-between;
     }

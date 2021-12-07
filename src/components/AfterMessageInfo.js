@@ -7,7 +7,7 @@ import './AfterMessageInfo.css'
 function AfterMessageInfo(props) {
     return (
         <div className="afterMessageInfo">
-           <p>Your message has been send. Thank you!</p>
+           <p>Your message has been send/Twoja wiadomość została wysłana</p>
            <div className="afterMessageInfo__button">
              <Button onClick={props.clearMessageIsSend} text='send message'/>
              </div> 

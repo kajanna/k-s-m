@@ -3,7 +3,7 @@
 	padding: 0.5rem 1rem;
 	border-radius: 18px;
 	color: var(--main);
-	font-size: 24px;
+	font-size: 18px;
 	transition: all 0.3s ease-in;
     border: 1px solid var(--main);
     box-shadow: 0 0 8px var(--lightmain);
@@ -18,7 +18,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: var(--darkgrey);
+	background-color: #fff;
 	border-radius: 18px;
 	z-index: -2;
 }
@@ -29,13 +29,13 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background-image: linear-gradient(var(--lightmain), var(--main));;
+    background-color: var(--main);
     transition: all 0.4s ease-in;
     z-index: -1;
 }
 .button:hover {
-    color: var(--darkgrey);
-    border: 1px solid var(--lightmain);
+    color: #fff;
+    border: 1px solid var(--main);
 }
 .button:hover:before  {
     width: 100%;
