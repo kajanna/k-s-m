@@ -13,14 +13,12 @@ function Project(props) {
         <ProjectLinks 
           feLink={feLink}
           beLink={beLink}
-          pageLink={pageLink}/>
-          
-        <div className="project__description">
-          <div
-            className="project__img"
+          pageLink={pageLink}
+          />
+          <div className="project__img"
             style={{ backgroundImage: `url(${img})` }}
           ></div>
-   
+        <div className="project__description">
           <div className="project__description--description">{description}</div>
           <div className="project__description--description">
             <p>{frontEnd}</p>

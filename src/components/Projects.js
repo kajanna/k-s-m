@@ -13,7 +13,6 @@ function MyProjects(props) {
     <section className="my-projects" id="projects">
      <div className="my-projects__header">Projects</div>
       <div className="my-projects_projects">
-   
         <Project
           img={myHome}
           key="myHome"

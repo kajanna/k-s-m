@@ -5,8 +5,7 @@
 	color: var(--main);
 	font-size: 18px;
 	transition: all 0.3s ease-in;
-    border: 1px solid var(--main);
-    box-shadow: 0 0 8px var(--lightmain);
+    border: 3px solid var(--main);
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -34,10 +33,14 @@
     z-index: -1;
 }
 .button:hover {
+    border: 3px solid var(--main);
     color: #fff;
-    border: 1px solid var(--main);
 }
 .button:hover:before  {
     width: 100%;
 }
-
+@media (min-width: 986px) {
+    .button {
+       font-size: 20px;
+    }
+}
