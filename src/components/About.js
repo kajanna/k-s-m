@@ -2,6 +2,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 import Button from '../shered/Button';
+import TextSeparator from '../shered/TextSeparator'
 
 import './About.css'
 
@@ -19,6 +20,7 @@ function About(props) {
             Courses and on-line tutorials. I'm a huge fan of React js as well as
             Material UI and Formik. Currently I'm learning Typescript and Node.
           </p>
+          <TextSeparator/>
           <p className="about__content-text">
             I'm looking for an entry level job or internship. It would be
             fantastic if I could improve my skills and gain some experience

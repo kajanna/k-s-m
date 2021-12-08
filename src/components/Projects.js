@@ -43,6 +43,24 @@ function MyProjects(props) {
           backEnd={"Node.js"}
           feLink=""
         />
+        <Project
+          img={inYourFridge}
+          key="inYourFridge"
+          description="Simple and intuitive fridge manager. Helps you track what you put in your fridge.   
+          Work in progress"
+          frontEnd={"React, TypeScript, Redux, Formik"}
+          backEnd={"Node.js"}
+          feLink=""
+        />
+        <Project
+          img={inYourFridge}
+          key="inYourFridge"
+          description="Simple and intuitive fridge manager. Helps you track what you put in your fridge.   
+          Work in progress"
+          frontEnd={"React, TypeScript, Redux, Formik"}
+          backEnd={"Node.js"}
+          feLink=""
+        />
       </div>
 
     </section>

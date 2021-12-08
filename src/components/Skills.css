@@ -1,10 +1,10 @@
 .skills {
-    background-color: var(--darkgrey);
+    background-color: #fff;
     padding: 4% 12%;
     text-align: center;
 }
 .skills__header {
-    background-color: var(--darkgrey);
+    background-color: #fff;
     background-position: center;
     height: 6rem;
     width: 10rem;
@@ -43,7 +43,7 @@
 }
 @media (min-width: 986px) {
     .skills__header {
-        margin: -7rem auto 1rem auto;
+        margin: -8rem auto 1rem auto;
         width: 16rem;
     }
     .skills__header-text {

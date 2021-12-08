@@ -18,10 +18,14 @@
 .project__description--description {
     text-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .project {
-        width: 36rem;
-        height: 10rem;
+        width: 500px;
+        height: 400px;
+        margin-bottom: 8rem;
+    }
+    .project__description {   
+        height: 200px;
     }
 }
 

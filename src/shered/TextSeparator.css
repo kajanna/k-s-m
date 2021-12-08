@@ -1,0 +1,13 @@
+.text-separator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 3rem;
+    margin: 1.2rem auto 1.5rem
+}
+.text-separator__element {
+    height: .6rem;
+    width: .6rem;
+    border-radius: 3px;
+    background-color: var(--main);
+}

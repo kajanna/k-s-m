@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center top;
     z-index: -2;
-    padding: 8% 4% 18%;
+    padding: 2.5rem 1rem 6rem;
 }
 .my-projects__header {
     color: #fff;
@@ -20,18 +20,14 @@
     height: fit-content;
 }
 
-@media (min-width: 750px) {
-  
-}  .my-projects {
-        padding: 4% 4% 12%;
-    }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .my-projects {
-        padding: 4% 4% 24%;
+        padding: 4rem 4rem 8rem
     }
     .my-projects_projects {
         display: flex;
-        flex-direction: row;    
+        flex-direction: row;
+        flex-wrap: wrap;    
     }
     .my-projects__header {
         margin: 1% auto 2%;

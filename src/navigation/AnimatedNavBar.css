@@ -1,21 +1,15 @@
 .animated-nav-bar {
     width: 100%;
-    background-color: var(--darkgrey);
+    background-image: linear-gradient(#000000,var(--main));
     box-shadow: var(--shadow);
     position: fixed;
     padding: 0;
     margin: 0;
-    height: 82px;
+    height: 78px;
     transition: all 0.8s ease-out;
     z-index: 10;
 }
 .animated-nav-bar--hidden {
     transform: translateY(-100%);
     box-shadow: none;
-}
-
-@media (min-width: 986px) {
-    .animated-nav-bar {
-        height: 6rem;
-    }
 }

@@ -21,9 +21,8 @@ function Line(props) {
               }
             });
           }
-          let observer = new IntersectionObserver( onScreen, options);
-            observer.observe(document.getElementById("line"));
-
+          let lineObserver = new IntersectionObserver( onScreen, options);
+          lineObserver.observe(document.getElementById("line"));
     },[showLine])
         
     return <div id="line" className={showLine ? "menu__line--show" : "menu__line--start"}></div>;

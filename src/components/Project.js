@@ -2,6 +2,7 @@ import React from "react";
 
 import Card from '../shered/Card'
 import ProjectLinks from './ProjectLinks';
+import TextSeparator from '../shered/TextSeparator';
 
 import './Project.css'
 
@@ -20,6 +21,7 @@ function Project(props) {
           ></div>
         <div className="project__description">
           <div className="project__description--description">{description}</div>
+          <TextSeparator/>
           <div className="project__description--description">
             <p>{frontEnd}</p>
             <p>{backEnd}</p>
