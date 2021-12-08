@@ -10,7 +10,8 @@
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     border: 2px #fff solid;
-    padding: 0;    
+    padding: 0;
+    transition: background-color .8s linear;    
 }
 @media (min-width: 750px) {
     .card {
@@ -20,5 +21,8 @@
 @media (min-width: 986px) {
     .card {
         margin: 8% 12%;
+    }
+    .card:hover {
+        background-color: #fff;
     }
 }

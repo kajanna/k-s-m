@@ -12,7 +12,6 @@ function Line(props) {
             threshold: 0.7
           }
           function onScreen (entries) {
-              console.log(entries);
             entries.forEach(entry => {
               if (entry.isIntersecting) {
                 setShowLine(true);
@@ -23,7 +22,7 @@ function Line(props) {
           }
           let lineObserver = new IntersectionObserver( onScreen, options);
           lineObserver.observe(document.getElementById("line"));
-    },[showLine])
+    },[showLine]);
         
     return <div id="line" className={showLine ? "menu__line--show" : "menu__line--start"}></div>;
 }
