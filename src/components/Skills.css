@@ -24,16 +24,41 @@
     margin-bottom: 2.5em;
 }
 .skills__logo {
-    padding: 1em;
+    padding: 1rem;
     margin: 1em;
-    width: 3em;
-    height: 3em;
+    width: 0;
+    height: 0;
     border-radius: 10px;
-    box-shadow: var(--shadow);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
+.skills__logo-a {
+    animation-name: skills-grow;
+    animation-duration: .2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.deley-1 {
+    animation-delay: .2s;
+}
+.deley-2 {
+    animation-delay: .4s;
+}
+.deley-3 {
+    animation-delay: .6s;
+}
+.deley-4 {
+    animation-delay: .8s;
+}
+.deley-5 {
+    animation-delay: 1s;
+}
+.deley-6 {
+    animation-delay: 1.2s;
+}
+
 
 @media (min-width: 750px) {
     .skills__header {
@@ -55,5 +80,18 @@
         flex-flow: wrap row;
         justify-content: space-around;
         margin-bottom: 1em;
+    }
+}
+
+@keyframes skills-grow {
+    from {
+        width: 0;
+        height: 0rem;
+        box-shadow: none;
+    }
+    to {
+        width: 3rem;
+        height: 3rem;
+        box-shadow: var(--shadow);
     }
 }

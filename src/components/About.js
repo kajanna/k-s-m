@@ -24,11 +24,10 @@ function About(props) {
         }
         let textObserver = new IntersectionObserver( onScreen, options);
         textObserver.observe(document.getElementById("about__header"));
-
-        return () => {
-          textObserver.unobserve();
+        if (showText) {
+          textObserver.unobserve(document.getElementById("about__header"));
         }
-  }, []);
+  }, [showText]);
   return (
     <section id="about" className="about">
       <div className="about__content">

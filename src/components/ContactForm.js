@@ -10,20 +10,32 @@ import './ContactForm.css';
 function ContactForm(props) {
 
   const [ error, setError ] = useState(null);
-
   const contactSchema = Yup.object().shape({
     name: Yup.string()
-      .max(60, "Za długie imię")
-      .required("Wymagane pole"),
+      .max(60, "too long name")
+      .required("required"),
     email: Yup.string()
-      .max(60, "Za długi adres email")
-      .email("Nieprawidłowy adres email")
-      .required("Wymagane pole"),
+      .max(60, "too long email")
+      .email("incorrect email")
+      .required("required"),
     message: Yup.string()
-      .min(20, "Wiadomość powinna mieć przynajmniej 20 znaków")
-      .max(500, "Wiadomość nie powinna miećwięcej niż 500 znaków")
-      .required("Wymagane pole")
+      .min(20, "message should be at least 20 characters long")
+      .max(500, "message should not exceed 500 characters")
+      .required("required")
   });
+  // const contactSchema = Yup.object().shape({
+  //   name: Yup.string()
+  //     .max(60, "Za długie imię")
+  //     .required("Wymagane pole"),
+  //   email: Yup.string()
+  //     .max(60, "Za długi adres email")
+  //     .email("Nieprawidłowy adres email")
+  //     .required("Wymagane pole"),
+  //   message: Yup.string()
+  //     .min(20, "Wiadomość powinna mieć przynajmniej 20 znaków")
+  //     .max(500, "Wiadomość nie powinna miećwięcej niż 500 znaków")
+  //     .required("Wymagane pole")
+  // });
 
   const sendMessage = async (values) => {
     try {
@@ -52,7 +64,6 @@ function ContactForm(props) {
     onSubmit: sendMessage,
     validationSchema: contactSchema,
   });
-
     return (
       <>
       {error && <p>{error}</p>}

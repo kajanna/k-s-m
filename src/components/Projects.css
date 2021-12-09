@@ -22,7 +22,7 @@
 
 @media (min-width: 1400px) {
     .my-projects {
-        padding: 4rem 4rem 8rem
+        padding: 4rem 18rem 8rem
     }
     .my-projects_projects {
         display: flex;

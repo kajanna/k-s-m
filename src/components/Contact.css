@@ -1,7 +1,12 @@
 .contact__bg-image {
     margin-top: -0.5rem;
     background-image: url('../assets/welcome_bg.jpg');
+    min-height: 44rem;
     padding: 8% 2% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -3;
 }
 .contact__main {
     display: flex;
@@ -14,7 +19,6 @@
     border-radius: 18px;
     z-index: 3;
 }
-
 .contact__header {
     margin-top: 1em;
 }
@@ -24,14 +28,15 @@
     color: var(--main);
     text-align: center;
 }
+
 @media (min-width: 750px) {
     .contact__bg-image {
-        padding: 12%;
+        padding: 12% 20%;
     }
 }
 @media (min-width: 986px) {
     .contact__bg-image { 
-        padding: 4% 28%;
+        padding: 4% 36%;
     }
     .contact__text {
         font-size: 44px;
