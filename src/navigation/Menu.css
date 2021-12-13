@@ -5,7 +5,20 @@
 .menu li {
     list-style-type: none;
     color: #fff;
-    margin: 1rem
+    margin: 1.5rem 1rem
+}
+.menu__line {
+    position: relative;
+}
+.menu__line:after {
+    content: '';
+    width: 0rem;
+    height: 2px;
+    background-color: var(--lightmain);
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    animation: line-a 0.5s linear forwards;
 }
 .menu a {
     letter-spacing: 0.15rem;
@@ -38,4 +51,13 @@
     .menu__line {
         display: none;
     }
+}
+
+@keyframes line-a {
+   from {
+        width: 0rem;
+   }
+   to {
+        width: 7rem;
+   } 
 }
