@@ -26,16 +26,17 @@
 .skills__logo {
     padding: 1rem;
     margin: 1em;
-    width: 0;
-    height: 0;
+    width: 3rem;
+    height: 3rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    opacity: 0;
 }
 .skills__logo-a {
-    animation-name: skills-grow;
+    animation-name: skills-show;
     animation-duration: .2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
@@ -83,15 +84,13 @@
     }
 }
 
-@keyframes skills-grow {
+@keyframes skills-show {
     from {
-        width: 0;
-        height: 0rem;
+        opacity: 0;
         box-shadow: none;
     }
     to {
-        width: 3rem;
-        height: 3rem;
+        opacity: 1;
         box-shadow: var(--shadow);
     }
 }

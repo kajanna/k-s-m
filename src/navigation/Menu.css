@@ -34,6 +34,9 @@
     .menu li {
         display: inline;
     }
+    .menu__line {
+        display: none;
+    }
     .menu a {
         font-size: 18px;
         padding: 8px 18px;

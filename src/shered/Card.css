@@ -11,7 +11,10 @@
     backdrop-filter: blur(4px);
     border: 2px #fff solid;
     padding: 0;
-    transition: background-color .8s linear;    
+    transition: background-color 2s linear;    
+}
+.card--white {
+    background-color: #fff;
 }
 @media (min-width: 750px) {
     .card {

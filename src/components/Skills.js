@@ -28,65 +28,37 @@ function Skills(props) {
       });
     }
     let skillsObserver = new IntersectionObserver(onScreen, options);
-    skillsObserver.observe(document.getElementById("skills__header"));
+    skillsObserver.observe(document.getElementById("skills"));
     if (showSkills) {
-      skillsObserver.unobserve(document.getElementById("skills__header"));
+      skillsObserver.unobserve(document.getElementById("skills"));
     }
   }, [showSkills]);
 
   return (
     <section id="skills" className="skills">
-      <div id="skills__header" className="skills__header">
+      <div className="skills__header">
         <div className="skills__header-text">Skills</div>
       </div>
       <div className="skills__logos">
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo ${showSkills && " skills__logo-a"}`}>
           <HtmlLogo />
         </div>
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a deley-1" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo deley-1 ${showSkills && " skills__logo-a"}`}>
           <CssLogo />
         </div>
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a deley-2" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo deley-2 ${showSkills && " skills__logo-a"}`}>
           <JslLogo />
         </div>
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a deley-3" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo deley-3 ${showSkills && " skills__logo-a"}`}>
           <ReactLogo />
         </div>
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a deley-4" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo deley-4 ${showSkills && " skills__logo-a"}`}>
           <NodeLogo />
         </div>
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a deley-5" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo deley-5 ${showSkills && " skills__logo-a"}`}>
           <MaterialUILogo />
         </div>
-        <div
-          className={
-            showSkills ? "skills__logo skills__logo-a deley-6" : "skills__logo"
-          }
-        >
+        <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
           <MaterialUILogo />
         </div>
       </div>

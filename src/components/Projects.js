@@ -15,7 +15,8 @@ function MyProjects(props) {
       <div className="my-projects_projects">
         <Project
           img={myHome}
-          key="myHome"
+          key="#myHome"
+          name="#myHome"
           description="House buying helper. 
           This app was designed as a kind of personal notebook. 
           It allows user to collect lot of information in one place."
@@ -26,7 +27,8 @@ function MyProjects(props) {
         />
         <Project
           img={meWant}
-          key="meWant"
+          key="#meWant"
+          name="#meWant"
           description="WishList creator. Polish language only. Made for my husband - board game fan and collector"
           frontEnd={"React, MaterialUI, Redux, Redux-Form"}
           backEnd={"Node.js, Cloudinary, Multer"}
@@ -36,7 +38,8 @@ function MyProjects(props) {
         />
         <Project
           img={inYourFridge}
-          key="inYourFridge"
+          key="#fhd hdfh e"
+          name="#fhd hdfh e"
           description="Simple and intuitive fridge manager. Helps you track what you put in your fridge.   
           Work in progress"
           frontEnd={"React, TypeScript, Redux, Formik"}
@@ -45,7 +48,8 @@ function MyProjects(props) {
         />
         <Project
           img={inYourFridge}
-          key="inYourFridge"
+          key="#fdh dfhe"
+          name="#fdh dfhe"
           description="Simple and intuitive fridge manager. Helps you track what you put in your fridge.   
           Work in progress"
           frontEnd={"React, TypeScript, Redux, Formik"}
@@ -54,7 +58,8 @@ function MyProjects(props) {
         />
         <Project
           img={inYourFridge}
-          key="inYourFridge"
+          key="#idfh df hgrdge"
+          name="#idfh df hgrdge"
           description="Simple and intuitive fridge manager. Helps you track what you put in your fridge.   
           Work in progress"
           frontEnd={"React, TypeScript, Redux, Formik"}

@@ -7,10 +7,10 @@ import TextSeparator from '../shered/TextSeparator';
 import './Project.css'
 
 function Project(props) {
-  const { img, description, frontEnd, backEnd, feLink, beLink, pageLink } = props
+  const { img, description, frontEnd, backEnd, feLink, beLink, pageLink, name } = props
   return (
     <div className="project">
-      <Card>
+      <Card name={name}>
         <ProjectLinks 
           feLink={feLink}
           beLink={beLink}
