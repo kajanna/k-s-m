@@ -16,7 +16,7 @@
     height: 2px;
     background-color: var(--lightmain);
     position: absolute;
-    top: 2rem;
+    top: 34px;
     left: 0;
     animation: line-a 0.5s linear forwards;
 }

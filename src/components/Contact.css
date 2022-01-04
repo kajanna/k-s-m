@@ -1,6 +1,6 @@
 .contact__bg-image {
     margin-top: -0.5rem;
-    background-image: url('../assets/welcome_bg.jpg');
+    background-image: url('../assets/projectsBG.svg');
     min-height: 44rem;
     padding: 8% 2% 12%;
     display: flex;
@@ -12,8 +12,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: var(--shadow);
     background-color: #fff;
+    box-shadow: var(--shadow);
     margin: 4%;
     padding: 4%;
     border-radius: 18px;
@@ -36,7 +36,7 @@
 }
 @media (min-width: 986px) {
     .contact__bg-image { 
-        padding: 4% 36%;
+        padding: 4% 30%;
     }
     .contact__text {
         font-size: 44px;

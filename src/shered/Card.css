@@ -11,7 +11,7 @@
     backdrop-filter: blur(4px);
     border: 2px #fff solid;
     padding: 0;
-    transition: background-color 2s linear;    
+    transition: background-color 1s linear;    
 }
 .card--white {
     background-color: #fff;
@@ -27,5 +27,8 @@
     }
     .card:hover {
         background-color: #fff;
+    }
+    .card--white {
+        background-color: rgba(255, 255, 255, 0.6);
     }
 }

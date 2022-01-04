@@ -8,7 +8,7 @@
     --grey: #A0B4B4;
     --main: #00EAD3;
     --lightmain: #88FFF7;
-    --shadow: 0px 2px 4px rgb(36, 4, 4, 0.6);
+    --shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     --error: #FF005C;
 }
 .main {

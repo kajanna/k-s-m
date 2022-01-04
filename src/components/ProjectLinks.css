@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: flex-end;
     margin: .8rem;
-
 }
 .project-links a {
     margin: .8rem;
@@ -13,11 +12,31 @@
     padding: 8px;
     border-radius: 8px;
     display: flex;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+    animation: icons-a 6s linear infinite;
 }
-.project-links a:hover {
-    transform: scale(1.1);
-    background-color:var(--main);
-    cursor: pointer;
-    box-shadow: var(--shadow);
+
+@media (min-width: 886px) {
+    .project-links a {
+        animation: none
+    }
+    .project-links a:hover {
+        transform: scale(1.1);
+        background-color:var(--main);
+        cursor: pointer;
+        box-shadow: var(--shadow);
+    }
+}
+@keyframes icons-a {
+    from, to {
+        box-shadow: 0px 0px 4px var(--grey);
+        background-color: #00C09F;
+
+    
+    }
+     50% {
+        box-shadow: 0px 0px 8px var(--grey);
+        background-color:var(--main);
+      
+    }
 }

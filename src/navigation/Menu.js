@@ -50,7 +50,7 @@ function Menu(props) {
           </HashLink>
         </li>
       
-        <li className={showLine ? "menu__line" : null}>
+        <li >
           <HashLink className="menu_link" smooth to="/#contact">
             contact
           </HashLink>
