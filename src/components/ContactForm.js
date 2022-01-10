@@ -38,6 +38,7 @@ function ContactForm(props) {
   // });
 
   const sendMessage = async (values) => {
+    props.onStartSending();
     try {
       const response = await fetch(process.env.REACT_APP_SEND_EMAIL_URL, {
         method: "POST",
@@ -46,13 +47,13 @@ function ContactForm(props) {
         },
         body: JSON.stringify(values),
       });
-      console.log(response);
       if (response.status === 200) {
         props.onMessageSend();
       }
     } catch (err) {
       setError(err || "Somthing went wrong.");
     }
+    props.onStopSending();
   };
 
   const formik = useFormik({
@@ -68,7 +69,6 @@ function ContactForm(props) {
       <>
       {error && <p>{error}</p>}
       <FormikProvider value={formik}>
-        {formik.isSubmitting && <p>Sending...</p>}
         <div className="contact-form__form">
         <Form>
         <UserInput
