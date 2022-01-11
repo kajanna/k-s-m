@@ -9,39 +9,45 @@ import './Contact.css'
 
 
 function Contact(props) {
-  const [ messageIsSend, setMessageIsSend ] = useState(false);
-  const [ sendingMessage, setSendingMessage ] = useState(false);
+  const [messageIsSend, setMessageIsSend] = useState(false);
+  const [sendingMessage, setSendingMessage] = useState(false);
 
   const afterMessageSend = () => {
     setMessageIsSend(true);
-  }
+  };
   const clearMessageIsSend = () => {
     setMessageIsSend(false);
   };
 
   const startSendingMessage = () => {
     setSendingMessage(true);
-  }
+  };
   const stopSendingMessage = () => {
     setSendingMessage(false);
   };
   return (
     <section id="contact" className="contact__bg-image">
-      {sendingMessage && !messageIsSend && <LoadingAnimation />}
-      <AnimatedUnmount show={!messageIsSend}>
+      <AnimatedUnmount show={sendingMessage && !messageIsSend}>
+        <LoadingAnimation />
+      </AnimatedUnmount>
+
+      <AnimatedUnmount show={!messageIsSend && !sendingMessage}>
         <div className="contact__main">
           <div className="contact__header">
             <div className="contact__text">Contact</div>
           </div>
-          <ContactForm 
-            onMessageSend={afterMessageSend} 
+          <ContactForm
+            onMessageSend={afterMessageSend}
             onStartSending={startSendingMessage}
-            onStopSending={stopSendingMessage}/>
+            onStopSending={stopSendingMessage}
+          />
         </div>
       </AnimatedUnmount>
-    {messageIsSend && !sendingMessage && <div className="contact__main">
+      <AnimatedUnmount show={messageIsSend && !sendingMessage}>
+        <div className="contact__main">
           <AfterMessageInfo clearMessageIsSend={clearMessageIsSend} />
-        </div>} 
+        </div>
+      </AnimatedUnmount>
     </section>
   );
 }
