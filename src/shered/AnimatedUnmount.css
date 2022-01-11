@@ -1,27 +1,23 @@
 .animated-unmount__get-in {
-    animation: get-in .5s ease-in-out .5;
+    animation: get-in .7s ease-in-out;
 }
 .animated-unmount__get-out {
-    animation: get-out .5s ease-in-out .5
+    animation: get-out .7s ease-in-out .7s;
 }
 
 @keyframes get-in {
   from {
     opacity: 0;
-    transform:translateY(-1000%)
   }
   to {
     opacity:1;
-    transform: none
   }
 }
 @keyframes get-out {
     from {
         opacity:1;
-        transform: none
     }
     to {
         opacity: 0;
-        transform:translateY(-1000%) 
     }
   }
