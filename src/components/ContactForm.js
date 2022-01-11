@@ -43,14 +43,16 @@ function ContactForm(props) {
       const response = await fetch(process.env.REACT_APP_SEND_EMAIL_URL, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(values),
       });
+      console.log(response);
       if (response.status === 200) {
         props.onMessageSend();
       }
     } catch (err) {
+      console.log(err);
       setError(err || "Somthing went wrong.");
     }
     props.onStopSending();
