@@ -1,3 +1,23 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    padding: 4%;
+    margin: 2% 8%;
+    border-radius: 18px;
+    z-index: 3;
+}
+.contact-form__header {
+    margin-top: 1em;
+}
+.contact-form__text {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--main);
+    text-align: center;
+}
 .contact-form__form {
     padding: 0.8rem 1rem 3rem;
 }

@@ -13,30 +13,19 @@ function Contact(props) {
   const { messageIsSend, sendingMessage, error, sendMessage, clear} = useSendMessage();
 
   return (
-  
     <section id="contact" className="contact__bg-image">
-        {console.log(`messageIsSend: ${messageIsSend}, sendingMessage: ${sendingMessage}, error: ${error}`)}
       <div className="contact_main">
-      <AnimatedUnmount show={!messageIsSend && !sendingMessage }>
-        <div className="contact__elements">
-          <div className="contact__header">
-            <div className="contact__text">Contact</div>
+        <AnimatedUnmount show={!messageIsSend && !sendingMessage}>
+          <ContactForm onMessageSend={sendMessage} />
+        </AnimatedUnmount>
+        <AnimatedUnmount show={sendingMessage}>
+          <LoadingAnimation />
+        </AnimatedUnmount>
+        <AnimatedUnmount show={messageIsSend && !sendingMessage}>
+          <div className="contact__elements">
+            <AfterMessageInfo onClear={clear} error={error} />
           </div>
-          <ContactForm
-            onMessageSend={sendMessage}
-          />
-        </div>
-      </AnimatedUnmount>
-      <AnimatedUnmount show={messageIsSend && !sendingMessage}>
-       <div className="contact__elements">
-          <AfterMessageInfo 
-            onClear ={clear}
-            error={error}/>
-        </div>
-      </AnimatedUnmount>
-      <AnimatedUnmount show={sendingMessage}>
-     <LoadingAnimation />
-      </AnimatedUnmount>
+        </AnimatedUnmount>
       </div>
     </section>
   );

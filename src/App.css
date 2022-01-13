@@ -21,7 +21,13 @@
 }
 
 section {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 3rem;
+}
+#skills {
+    scroll-margin-top: 10rem;
+}
+#contact {
+    scroll-margin-top: 1rem;
 }
 a {
     font-size: x-large;

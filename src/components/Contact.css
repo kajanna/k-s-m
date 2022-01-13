@@ -12,30 +12,6 @@
     z-index: -3;
 }
 
-.contact__elements {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #fff;
-    box-shadow: var(--shadow);
-    margin: 4%;
-    padding: 4%;
-    border-radius: 18px;
-    z-index: 3;
-    transition: all 0.3s linear;
-    transform: none
-}
-
-.contact__header {
-    margin-top: 1em;
-}
-.contact__text {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--main);
-    text-align: center;
-}
-
 @media (min-width: 750px) {
     .contact__bg-image {
         padding: 12% 20%;

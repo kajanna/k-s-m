@@ -50,7 +50,10 @@ function ContactForm(props) {
     validationSchema: contactSchema,
   });
     return (
-      <>
+      <div className="contact-form">
+      <div className="contact-form__header">
+        <div className="contact-form__text">Contact</div>
+      </div>
       <FormikProvider value={formik}>
         <div className="contact-form__form">
         <Form>
@@ -79,7 +82,7 @@ function ContactForm(props) {
       </Form>
       </div>
       </FormikProvider>
-      </>
+</div>
     )
 }
 

@@ -7,6 +7,9 @@ import { ReactComponent as CssLogo  } from '../assets/technologiesLogos/cssLogo.
 import { ReactComponent as ReactLogo } from '../assets/technologiesLogos/reactLogo.svg';
 import { ReactComponent as NodeLogo  } from '../assets/technologiesLogos/nodeLogo.svg';
 import { ReactComponent as MaterialUILogo  } from '../assets/technologiesLogos/materialUILogo.svg';
+import { ReactComponent as TypeScriptLogo  } from '../assets/technologiesLogos/typeScriptLogo.svg';
+import { ReactComponent as SassLogo  } from '../assets/technologiesLogos/sassLogo.svg';
+import { ReactComponent as GsapLogo  } from '../assets/technologiesLogos/gsap.svg';
 
 import "./Skills.css";
 
@@ -59,7 +62,13 @@ function Skills(props) {
           <MaterialUILogo />
         </div>
         <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
-          <MaterialUILogo />
+          <TypeScriptLogo />
+        </div>
+        <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
+          <SassLogo />
+        </div>
+        <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
+          <GsapLogo />
         </div>
       </div>
     </section>
