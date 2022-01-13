@@ -1,28 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
+import { CSSTransition } from 'react-transition-group';
 
 import './AnimatedUnmount.css'
 
 function AnimatedUnmount({ show, children }) {
-    const [ renderComponent , setRenderComponent ] = useState(show);
-    
-    useEffect(() => {
-        if (show) setRenderComponent(true);
-      }, [show]);
-    
-    const onAnimationEnd = () => {
-        if (!show) setRenderComponent(false);
-    };
-
-      return (
-        renderComponent && (
-          <div
-          className={ show ? "animated-unmount__get-in" : "animated-unmount__get-out"}
-            onAnimationEnd={onAnimationEnd}
-          >
-            {children}
-          </div>
-        )
-      );
-    };
+      return <CSSTransition 
+      in={show} 
+      timeout={300}
+      appear={show}
+      enter={show} 
+      classNames="animated-unmount"
+      unmountOnExit
+      >
+        <div>
+        { children }
+        </div>
+    </CSSTransition>
+};
 
 export default AnimatedUnmount;
