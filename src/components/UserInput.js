@@ -19,8 +19,7 @@ function UserInput({ label, large, ...props }) {
       {large ? (
         <textarea
           className="user-input__textarea"
-          rows={7}
-          cols={40}
+          rows={3}
           {...props}
           {...field}
         />

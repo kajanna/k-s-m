@@ -5,7 +5,7 @@
 .animated-unmount-enter-active {
   opacity: 1;
   transform: none;
-  transition: all .3s;
+  transition: all .3s linear;
 }
 .animated-unmount-exit {
   opacity: 1;
@@ -14,5 +14,5 @@
 .animated-unmount-exit-active {
   opacity: 0;
   transform: translateY(100%);
-  transition: all .3s;
+  transition: all .3s linear;
 }
