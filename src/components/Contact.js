@@ -1,53 +1,43 @@
-import React,  {useState } from 'react';
+import React from 'react';
 
 import ContactForm from './ContactForm';
 import AfterMessageInfo from './AfterMessageInfo';
 import AnimatedUnmount from '../shered/AnimatedUnmount';
 import LoadingAnimation from '../shered/LoadingAnimation';
+import useSendMessage from '../shered/useSendMessage';
 
 import './Contact.css'
 
 
 function Contact(props) {
-  const [messageIsSend, setMessageIsSend] = useState(false);
-  const [sendingMessage, setSendingMessage] = useState(false);
+  const { messageIsSend, sendingMessage, error, sendMessage, clear} = useSendMessage();
 
-  const afterMessageSend = () => {
-    setMessageIsSend(true);
-  };
-  const clearMessageIsSend = () => {
-    setMessageIsSend(false);
-  };
-
-  const startSendingMessage = () => {
-    setSendingMessage(true);
-  };
-  const stopSendingMessage = () => {
-    setSendingMessage(false);
-  };
   return (
+  
     <section id="contact" className="contact__bg-image">
-      <AnimatedUnmount show={sendingMessage && !messageIsSend}>
-        <LoadingAnimation />
-      </AnimatedUnmount>
-
-      <AnimatedUnmount show={!messageIsSend && !sendingMessage}>
-        <div className="contact__main">
+        {console.log(`messageIsSend: ${messageIsSend}, sendingMessage: ${sendingMessage}, error: ${error}`)}
+      <div className="contact_main">
+      <AnimatedUnmount show={!messageIsSend && !sendingMessage }>
+        <div className="contact__elements">
           <div className="contact__header">
             <div className="contact__text">Contact</div>
           </div>
           <ContactForm
-            onMessageSend={afterMessageSend}
-            onStartSending={startSendingMessage}
-            onStopSending={stopSendingMessage}
+            onMessageSend={sendMessage}
           />
         </div>
       </AnimatedUnmount>
       <AnimatedUnmount show={messageIsSend && !sendingMessage}>
-        <div className="contact__main">
-          <AfterMessageInfo clearMessageIsSend={clearMessageIsSend} />
+       <div className="contact__elements">
+          <AfterMessageInfo 
+            onClear ={clear}
+            error={error}/>
         </div>
       </AnimatedUnmount>
+      <AnimatedUnmount show={sendingMessage}>
+     <LoadingAnimation />
+      </AnimatedUnmount>
+      </div>
     </section>
   );
 }

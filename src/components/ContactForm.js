@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useFormik, FormikProvider, Form } from 'formik';
 import * as Yup from 'yup';
 
@@ -9,7 +9,6 @@ import './ContactForm.css';
 
 function ContactForm(props) {
 
-  const [ error, setError ] = useState(null);
   const contactSchema = Yup.object().shape({
     name: Yup.string()
       .max(60, "too long name")
@@ -38,22 +37,7 @@ function ContactForm(props) {
   // });
 
   const sendMessage = async (values) => {
-    props.onStartSending();
-    try {
-      const response = await fetch(process.env.REACT_APP_SEND_EMAIL_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(values),
-      });
-      if (response.status === 200) {
-        props.onMessageSend();
-      }
-    } catch (err) {
-      setError(err || "Somthing went wrong.");
-    }
-    props.onStopSending();
+    props.onMessageSend(values);
   };
 
   const formik = useFormik({
@@ -67,7 +51,6 @@ function ContactForm(props) {
   });
     return (
       <>
-      {error && <p>{error}</p>}
       <FormikProvider value={formik}>
         <div className="contact-form__form">
         <Form>

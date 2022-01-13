@@ -4,12 +4,14 @@ import Button from '../shered/Button';
 
 import './AfterMessageInfo.css'
 
-function AfterMessageInfo(props) {
+function AfterMessageInfo({ onClear, error }) {
     return (
         <div className="afterMessageInfo">
-           <p>Your message has been send/Twoja wiadomość została wysłana</p>
+           <p>{error ? error : "Your message has been send"}</p>
            <div className="afterMessageInfo__button">
-             <Button onClick={props.clearMessageIsSend} text='send another message'/>
+             <Button 
+                onClick={onClear} 
+                text={error ? "Please try again" :"send another message"}/>
              </div> 
         </div>
     );
