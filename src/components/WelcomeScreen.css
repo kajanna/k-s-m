@@ -101,12 +101,13 @@
   } 
 }
 
-/* Animations */
 @media (min-width: 1500px) {
   .welcome {
     padding-top: 0px;
   }
 }
+
+/* Animations */
 @keyframes scale-blobs-a {
   from {
     transform: none;
@@ -142,11 +143,3 @@
     transform: translate(10px, 10px);
   }
 } 
-@keyframes make-visible-a {
-  from { 
-    opacity: 0
-   }
-  to { 
-    opacity: 1;
-  }
-}

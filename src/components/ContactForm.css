@@ -8,6 +8,8 @@
     margin: 2% 8%;
     border-radius: 18px;
     z-index: 3;
+    opacity: 0;
+    animation: make-visible-a .7s linear forwards;
 }
 .contact-form__header {
     margin-top: 1em;
