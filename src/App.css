@@ -40,6 +40,14 @@ a {
         overflow-y: visible
     }
 }
+@keyframes make-visible-a {
+    from { 
+      opacity: 0
+     }
+    to { 
+      opacity: 1;
+    }
+  }
 
 
 

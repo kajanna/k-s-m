@@ -6,9 +6,11 @@
     background-color: #fff;
     box-shadow: var(--shadow);
     border-radius: 18px;
-      padding: 4%;
+    padding: 4%;
     margin: 2% 8%;
     z-index: 3;
+    opacity: 0;
+    animation: make-visible-a .7s linear forwards ;
 }
 .afterMessageInfo p {
     text-align: center;
