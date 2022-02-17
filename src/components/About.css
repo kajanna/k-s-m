@@ -10,18 +10,20 @@
   font-size: 74px;
   color: var(--main);
   margin: 2rem auto 1.6rem;
-  transform: scale(0.01);
-  transition: transform .4s ease-out;
+  transform: scale(0.001);
+  transition: transform .6s ease-out;
 }
 .about__content-text {
     color: var(--darkgrey);
     margin: 2% 12% 4%;
     text-align: justify;
-    transform: scale(0.01);
+    transform: translateY(10px);
+    opacity:0;
     transition: all .8s linear .4s;
 }
 .about__appear {
-    transform: scale(1);
+    transform: none;
+    opacity:1;
   }
 .about__button-section {
     padding: 4% 20% 8%;

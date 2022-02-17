@@ -1,12 +1,8 @@
-.project {
-    display: flex;
-    flex-direction: column;
-}
 .project__img {
     background-repeat: no-repeat;
     height: 80px;
     width: 240px;
-    margin: 1.2rem auto 2rem;
+    margin: 2rem auto  1.2rem;
 }
 .project__description {   
     color: var(--darkgrey);
@@ -18,14 +14,10 @@
 .project__description--description {
     text-align: center;
 }
-@media (min-width: 1400px) {
-    .project {
-        width: 500px;
-        height: 400px;
-        margin-bottom: 12rem;
-    }
+@media (min-width: 986px) {
     .project__description {   
-        height: 200px;
+        height: 350px;
     }
+ 
 }
 

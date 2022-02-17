@@ -10,16 +10,19 @@ function ProjectLinks(props) {
   return (
     <div className="project-links">
       <a href={feLink} target="_blank" rel="noreferrer">
-        <GitHub />
+        <div className="project-links__logo"><GitHub /></div>
+      front-end code on GitHub  
       </a>
       {beLink && (
         <a href={beLink} target="_blank" rel="noreferrer">
-          <GitHub />
+           <div className="project-links__logo"><GitHub /></div>
+      back-end code on GitHub 
         </a>
       )}
       {pageLink && (
         <a href={pageLink} target="_blank" rel="noreferrer">
-          <OpenInBrowser />
+          <div className="project-links__logo"><OpenInBrowser /></div>
+          open in browser 
         </a>
       )}
     </div>

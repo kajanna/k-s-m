@@ -29,7 +29,7 @@
 .main-navigation__menu-item {
     display: none;
 }
-@media (min-width: 986px) {
+@media (min-width: 996px) {
     .main-navigation__nav-bar {
         display: flex;
         flex-direction: row;

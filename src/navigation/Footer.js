@@ -14,7 +14,7 @@ function Footer(props) {
            
             </HashLink>
             </div>
-            <p>copyright by Kaja Szokalska 2021</p>
+            <p>copyright by Kaja Szokalska 2022</p>
         </div>
     );
 }

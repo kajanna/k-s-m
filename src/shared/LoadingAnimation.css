@@ -4,7 +4,7 @@
     align-items: center;
     z-index:12;
     opacity: 0;
-    animation: make-visible-a .7s linear forwards; 
+    animation: make-visible-a .5s linear forwards; 
 }
 .loadingAnimation__main {
     position: relative;

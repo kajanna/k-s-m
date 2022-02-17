@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import Button from '../shered/Button';
-import TextSeparator from '../shered/TextSeparator'
+import Button from '../shared/Button';
+import TextSeparator from '../shared/TextSeparator'
 
 import './About.css'
 
