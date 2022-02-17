@@ -3,7 +3,7 @@ import { useFormik, FormikProvider, Form } from 'formik';
 import * as Yup from 'yup';
 
 import UserInput from './UserInput';
-import Button from '../shered/Button'
+import Button from '../shared/Button'
 
 import './ContactForm.css';
 

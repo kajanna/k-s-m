@@ -4,6 +4,8 @@
   background: black url('../assets/welcome_bg.jpg') no-repeat center top;
   background-size: cover;
   position: relative;
+  opacity: 0;
+  animation: make-visible-a 1s linear forwards;
 }
 .welcome__illustrations {
   position: absolute;

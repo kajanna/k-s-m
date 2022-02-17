@@ -2,7 +2,7 @@ import React from 'react';
 import  { createPortal } from 'react-dom';
 
 import Menu from './Menu'
-import Backdrop from '../shered/Backdrop';
+import Backdrop from '../shared/Backdrop';
 
 import './Drawer.css';
 

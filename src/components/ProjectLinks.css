@@ -1,19 +1,29 @@
 .project-links {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: .8rem;
+    flex-direction: column;
+    width: 100%;
 }
 .project-links a {
-    margin: .8rem;
-    background-color: #00C09F;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
     height: 24px;
-    width: 24px;
+    max-width: 100%;
     padding: 8px;
     border-radius: 8px;
     display: flex;
     transition: all 0.3s ease;
     animation: icons-a 6s linear infinite;
+}
+.project-links__logo {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
 }
 
 @media (min-width: 886px) {
@@ -21,8 +31,8 @@
         animation: none
     }
     .project-links a:hover {
-        transform: scale(1.1);
-        background-color:var(--main);
+        transform: scale(1.01);
+        background-color:#00C09F;
         cursor: pointer;
         box-shadow: var(--shadow);
     }
@@ -30,13 +40,13 @@
 @keyframes icons-a {
     from, to {
         box-shadow: 0px 0px 4px var(--grey);
-        background-color: #00C09F;
+        background-color: var(--main);
 
     
     }
      50% {
         box-shadow: 0px 0px 8px var(--grey);
-        background-color:var(--main);
+        background-color: #00C09F;
       
     }
 }

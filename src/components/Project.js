@@ -1,21 +1,16 @@
 import React from "react";
 
-import Card from '../shered/Card'
+import Card from '../shared/Card'
 import ProjectLinks from './ProjectLinks';
-import TextSeparator from '../shered/TextSeparator';
+import TextSeparator from '../shared/TextSeparator';
 
 import './Project.css'
 
 function Project(props) {
   const { img, description, frontEnd, backEnd, feLink, beLink, pageLink, name } = props
   return (
-    <div className="project">
+    
       <Card name={name}>
-        <ProjectLinks 
-          feLink={feLink}
-          beLink={beLink}
-          pageLink={pageLink}
-          />
           <div className="project__img"
             style={{ backgroundImage: `url(${img})` }}
           ></div>
@@ -23,12 +18,20 @@ function Project(props) {
           <div className="project__description--description">{description}</div>
           <TextSeparator/>
           <div className="project__description--description">
-            <p>{frontEnd}</p>
-            <p>{backEnd}</p>
+            <p>front-end: {frontEnd}</p>
+            <p>back-end: {backEnd}</p>
+            <TextSeparator/>
+          <ProjectLinks 
+          feLink={feLink}
+          beLink={beLink}
+          pageLink={pageLink}
+          />
           </div>
+          
         </div>
+        
       </Card>
-    </div>
+ 
   );
 }
 

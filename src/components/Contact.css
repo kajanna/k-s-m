@@ -11,9 +11,6 @@
     justify-content: center;
     z-index: -3;
 }
-.contact--hidden {
-    display: none
-}
 
 @media (min-width: 750px) {
     .contact__bg-image {

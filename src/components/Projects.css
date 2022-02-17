@@ -13,23 +13,23 @@
     text-align: center;
 }
 .my-projects_projects {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: fit-content;
 }
-
-@media (min-width: 1400px) {
+@media (min-width: 986px) {
+    .my-projects_projects {
+        align-items: center;    
+}
+}
+@media (min-width: 1200px) {
     .my-projects {
-        padding: 4rem 18rem 8rem
+        padding-top: 4rem 
     }
     .my-projects_projects {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;    
+        flex-wrap: wrap; 
     }
-    .my-projects__header {
-        margin: 1% auto 2%;
-}
 }
