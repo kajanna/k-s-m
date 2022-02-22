@@ -9,6 +9,7 @@
     border: 3px solid var(--main);
     z-index: 1;
     box-shadow: var(--shadow);
+    cursor: pointer;
 }
 
 @media (min-width: 986px) {

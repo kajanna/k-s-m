@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-// Logo import
-import { ReactComponent as HtmlLogo  } from '../assets/technologiesLogos/htmlLogo.svg';
-import { ReactComponent as JslLogo  } from '../assets/technologiesLogos/javaScriptLogo.svg';
-import { ReactComponent as CssLogo  } from '../assets/technologiesLogos/cssLogo.svg';
-import { ReactComponent as ReactLogo } from '../assets/technologiesLogos/reactLogo.svg';
-import { ReactComponent as NodeLogo  } from '../assets/technologiesLogos/nodeLogo.svg';
-import { ReactComponent as MaterialUILogo  } from '../assets/technologiesLogos/materialUILogo.svg';
-import { ReactComponent as TypeScriptLogo  } from '../assets/technologiesLogos/typeScriptLogo.svg';
-import { ReactComponent as SassLogo  } from '../assets/technologiesLogos/sassLogo.svg';
-import { ReactComponent as GsapLogo  } from '../assets/technologiesLogos/gsap.svg';
+
+import HtmlLogo   from '../assets/technologiesLogos/html_logo.png';
+import JslLogo   from '../assets/technologiesLogos/javascript_logo.png';
+import CssLogo   from '../assets/technologiesLogos/css_logo.png';
+import ReactLogo  from '../assets/technologiesLogos/react_logo.png';
+import NodeLogo   from '../assets/technologiesLogos/node_logo.png';
+import MaterialUILogo   from '../assets/technologiesLogos/material_logo.png';
+import TypeScriptLogo   from '../assets/technologiesLogos/typescript_logo.png';
+import SassLogo   from '../assets/technologiesLogos/sass_logo.png';
+import GsapLogo   from '../assets/technologiesLogos/GSAP_logo.png';
 
 import "./Skills.css";
 
@@ -44,31 +44,31 @@ function Skills(props) {
       </div>
       <div className="skills__logos">
         <div className={`skills__logo ${showSkills && " skills__logo-a"}`}>
-          <HtmlLogo />
+          <img src={HtmlLogo} alt="Html Logo" />
         </div>
         <div className={`skills__logo deley-1 ${showSkills && " skills__logo-a"}`}>
-          <CssLogo />
+          <img src={JslLogo} alt="CSS Logo" />
         </div>
         <div className={`skills__logo deley-2 ${showSkills && " skills__logo-a"}`}>
-          <JslLogo />
+          <img src={CssLogo} alt="Java Script Logo" />
         </div>
         <div className={`skills__logo deley-3 ${showSkills && " skills__logo-a"}`}>
-          <ReactLogo />
+          <img src={ReactLogo} alt="React Logo " />
         </div>
         <div className={`skills__logo deley-4 ${showSkills && " skills__logo-a"}`}>
-          <NodeLogo />
+          <img src={NodeLogo} alt="NodeLogo" />
         </div>
         <div className={`skills__logo deley-5 ${showSkills && " skills__logo-a"}`}>
-          <MaterialUILogo />
+          <img src={MaterialUILogo} alt="MaterialUILogo" />
         </div>
         <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
-          <TypeScriptLogo />
+          <img src={TypeScriptLogo} alt="Type Script Logo" />
         </div>
         <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
-          <SassLogo />
+          <img src={SassLogo} alt="Sass Logo" />
         </div>
         <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
-          <GsapLogo />
+          <img  src={GsapLogo} alt="Gsap Logo " />
         </div>
       </div>
     </section>
