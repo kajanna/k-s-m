@@ -59,7 +59,9 @@
 .deley-6 {
     animation-delay: 1.2s;
 }
-
+.deley-7 {
+    animation-delay: 1.4s;
+}
 
 @media (min-width: 750px) {
     .skills__header {
