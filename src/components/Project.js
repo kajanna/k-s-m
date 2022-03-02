@@ -18,8 +18,8 @@ function Project(props) {
           <div className="project__description--description">{description}</div>
           <TextSeparator/>
           <div className="project__description--description">
-            <p>front-end: {frontEnd}</p>
-            <p>back-end: {backEnd}</p>
+            <p>front-end: <br></br>{frontEnd}</p>
+            <p>back-end: <br></br>{backEnd}</p>
             <TextSeparator/>
           <ProjectLinks 
           feLink={feLink}

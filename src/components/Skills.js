@@ -9,7 +9,7 @@ import NodeLogo   from '../assets/technologiesLogos/node_logo.png';
 import MaterialUILogo   from '../assets/technologiesLogos/material_logo.png';
 import TypeScriptLogo   from '../assets/technologiesLogos/typescript_logo.png';
 import SassLogo   from '../assets/technologiesLogos/sass_logo.png';
-import GsapLogo   from '../assets/technologiesLogos/GSAP_logo.png';
+// import GsapLogo   from '../assets/technologiesLogos/GSAP_logo.png';
 
 import "./Skills.css";
 
@@ -64,12 +64,12 @@ function Skills(props) {
         <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
           <img src={TypeScriptLogo} alt="Type Script Logo" />
         </div>
-        <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
+        <div className={`skills__logo deley-7 ${showSkills && " skills__logo-a"}`}>
           <img src={SassLogo} alt="Sass Logo" />
         </div>
-        <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
+        {/* <div className={`skills__logo deley-6 ${showSkills && " skills__logo-a"}`}>
           <img  src={GsapLogo} alt="Gsap Logo " />
-        </div>
+        </div> */}
       </div>
     </section>
   );

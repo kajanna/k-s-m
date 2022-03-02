@@ -36,16 +36,17 @@ function About(props) {
             Hi!
           </div>
           <p className={showText ? "about__content-text about__appear": "about__content-text"}>
-            I'm ex-graphic designer and DTP operator. About 1,5 year ago I
+            I'm ex-graphic designer and DTP operator. About 1 year ago I
             decided to change my career path. I learned basics from Udemy
-            Courses and on-line tutorials. I'm a huge fan of React js as well as
-            Material UI and Formik. Currently I'm learning Typescript and Node.
+            Courses and on-line tutorials. 16.11.2021 - 08.03.2022 I participated in Dare It 
+            Mentoring Program where I work with my mentor on my front-end skills.
+            I'm a huge fan of React and Type Script as well as
+            Material UI and Formik.
           </p>
           <TextSeparator/>
           <p className={showText ? "about__content-text about__appear": "about__content-text"}>
-            I'm looking for an entry level job or internship. It would be
-            fantastic if I could improve my skills and gain some experience
-            working on some real life project.
+            I'm looking for an entry level front-end job or internship. It would be
+            fantastic if I could gain some experience working on some real life projects.
           </p>
         </div>
       </div>

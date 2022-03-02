@@ -21,8 +21,8 @@ function MyProjects(props) {
           name="#myHome"
           description="House buying helper. 
            This app allows user to collect lot of information in one place."
-          frontEnd={"React, MaterialUI, Redux, Redux-Form"}
-          backEnd={"FireBase"}
+          frontEnd={"React + MaterialUI + Redux + Redux-Form"}
+          backEnd={"Firebase - Realtime Database"}
           feLink="https://github.com/kajanna/my-home"
           pageLink="https://my-home-4f65c.web.app/"
         />
@@ -30,9 +30,9 @@ function MyProjects(props) {
           img={myLibrary}
           key="#myLibrary"
           name="#myLibrary"
-          description="Library manager. App that helps you keep track of borrowed and lent books."
-          frontEnd={"React, TypeScript, SASS"}
-          backEnd={"firestorm"}
+          description="Library manager. App that helps user keep track of borrowed and lent books."
+          frontEnd={"React + TypeScript + SASS"}
+          backEnd={"Firestorm -  Cloud Firestore"}
           feLink="https://github.com/kajanna/my-library"
         />
         <Project
@@ -40,8 +40,8 @@ function MyProjects(props) {
           key="#meWant"
           name="#meWant"
           description="WishList creator. Polish language only."
-          frontEnd={"React, MaterialUI, Redux, Redux-Form"}
-          backEnd={"Node.js, Cloudinary, Multer"}
+          frontEnd={"React + MaterialUI + Formik + Yup"}
+          backEnd={"Node.js + Cloudinary + Multer"}
           feLink="https://github.com/kajanna/me-want"
           beLink="https://github.com/kajanna/me-want-backend"
           pageLink="https://me-want.firebaseapp.com/"
