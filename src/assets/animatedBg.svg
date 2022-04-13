@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 995.736 558.731">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.6;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Warstwa_4" data-name="Warstwa 4">
+    <g id="blur-spheres1" class="cls-1">
+      <circle class="cls-2" cx="334.37" cy="256.466" r="36.333"/>
+      <circle class="cls-2" cx="641.487" cy="298.436" r="24.907"/>
+      <circle class="cls-2" cx="616.796" cy="191.084" r="16.395" transform="translate(-18.301 74.455) rotate(-6.807)"/>
+      <circle class="cls-2" cx="485.018" cy="238.484" r="84.634"/>
+      <circle class="cls-2" cx="280.9" cy="259.929" r="2.9"/>
+      <circle class="cls-2" cx="349.973" cy="199.522" r="2.9"/>
+      <circle class="cls-2" cx="684.431" cy="335.644" r="2.9"/>
+      <circle class="cls-2" cx="563.736" cy="318.396" r="2.9"/>
+    </g>
+    <g id="blur-spheres2">
+      <circle class="cls-2" cx="341.751" cy="331.055" r="38.528"/>
+      <circle class="cls-2" cx="782.495" cy="323.346" r="46.034"/>
+      <circle class="cls-2" cx="187.608" cy="311.128" r="46.034"/>
+      <circle class="cls-2" cx="531.204" cy="206.233" r="46.034"/>
+      <circle class="cls-2" cx="616.577" cy="255.908" r="56.089"/>
+      <circle class="cls-2" cx="476.779" cy="273.526" r="67.275"/>
+      <circle class="cls-2" cx="656.892" cy="209.435" r="13.974"/>
+      <circle class="cls-2" cx="714.364" cy="298.603" r="21.726"/>
+      <circle class="cls-2" cx="268.389" cy="321.296" r="11.753"/>
+      <circle class="cls-2" cx="241.925" cy="228.56" r="15.561"/>
+      <circle class="cls-2" cx="359.077" cy="188.886" r="45.39" transform="translate(115.111 513.07) rotate(-80.783)"/>
+      <circle class="cls-2" cx="744.756" cy="226.666" r="24.111"/>
+    </g>
+  </g>
+</svg>

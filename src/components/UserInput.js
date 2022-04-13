@@ -1,8 +1,8 @@
-import React, { useState} from 'react';
+import React, { useState } from "react";
 
-import { useField } from 'formik';
+import { useField } from "formik";
 
-import './UserInput.css'
+import "./UserInput.css";
 
 function UserInput({ label, large, ...props }) {
   const [field, meta] = useField(props);
@@ -31,8 +31,8 @@ function UserInput({ label, large, ...props }) {
           onFocus={handleFocus}
         />
       )}
-      <div className="user-input__error-text">
-      {showFeedback ? meta.error && meta.error : ''} 
+      <div className="user-input__error">
+        {showFeedback ? meta.error && meta.error : ""}
       </div>
     </div>
   );

@@ -1,30 +1,17 @@
 .welcome {
   width: 100%;
-  height: 36rem;
-  background: black url('../assets/welcome_bg.jpg') no-repeat center top;
+  height: 100vh;
+  background: black url('../assets/welcome_bg.png') no-repeat center top;
   background-size: cover;
   position: relative;
 }
-.welcome__illustrations {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  opacity:0;
-  animation: make-visible-a 1.6s linear 0.2s 1 forwards;
-}
 .welcome__text {
+  padding-top: 7rem;
   text-align: center;
-  color: var(--lightmain);
-  padding-top: 6rem;
-  opacity:0;
-  animation: make-visible-a 1s linear 1s 1 forwards;
+  color: #fff;
 }
 .welcome__text h2  {
   font-size: 2em;
-  overflow: hidden; 
-  margin: 0 auto;
   letter-spacing: .2em
 }
 .welcome__text p {
@@ -32,73 +19,76 @@
   line-height: 2em;
   letter-spacing: .2em
 }
+.welcome__picture {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.welcome__bg {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+
+}
+.welcome__blobs {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0
+}
 .welcome__nav-icons {
   display: none
 }
-/* Animated elements */
-#scale-blobs {
-  animation: scale-blobs-a 4s linear  infinite alternate-reverse;
-}
-#glow-scale-blobs {
-  animation: glow-scale-blobs-a 2s linear  infinite alternate-reverse;
-}
+
+/* Animated elements from '../assets/animatedBg.svg' */
 #blur-spheres1 {
-  filter: blur(18px);
-  animation: blur-sphere-a 2s linear infinite alternate-reverse ;
+  filter: blur(70px);
+  animation: blur-sphere-a 1s linear infinite alternate-reverse ;
 }
 #blur-spheres2 {
-  filter: blur(18px);
-  animation: blur-sphere-a 2s linear 2s infinite alternate-reverse ;
-}
-#clouds {
-  filter: drop-shadow(8px 12px 16px rgb(0 0 0 / 0.5));
-  animation: clouds-a 3s linear infinite alternate-reverse;
+  filter: blur(70px);
+  animation: blur-sphere-a 1s linear 1s infinite alternate-reverse ;
 }
 
 @media (min-width: 750px) {
-  .welcome {
-    height: 60rem;
+  .welcome__text {
+    padding-top: 8em;
   }
-    .welcome__text {
-      padding-top: 8em;
-    }
-    .welcome__text h2  {
-      font-size: 4em;
-      letter-spacing: .1em
-    }
-    .welcome__text p {
-      font-size: 2em;
-    } 
+  .welcome__text h2 {
+    font-size: 4em;
+    letter-spacing: .1em
+  }
+  .welcome__text p {
+    font-size: 2em;
+  }
+  .welcome__picture {
+    left: calc(50% - 300px);
+    width: 600px;
+  }
 }
 
 @media (min-width: 986px) {
-  .welcome {
-    height: 100vh;
-  }
-  .welcome__illustrations {
-    bottom: 0;
-    height: 96%;   
-  }
   .welcome__text {
     padding: 2% 4%;
     text-align: left;
   }
-  .welcome__text h2  {
+  .welcome__text h2 {
     font-size: 5em;
     letter-spacing: 0
-    
   }
   .welcome__text p {
     font-size: 1.25em;
-   
-  } 
+  }
+  .welcome__bg {
+    bottom: -16rem;
+  }
   .welcome__nav-icons {
     display: inline;
     position: absolute;
     z-index: 6;
     right: 4rem;
-    top:6rem
-  } 
+    top: 6rem
+  }
 }
 
 @media (min-width: 1500px) {
@@ -107,39 +97,21 @@
   }
 }
 
-/* Animations */
-@keyframes scale-blobs-a {
-  from {
-    transform: none;
-  }
-  to {
-    transform: scale(0.95);
-    filter: drop-shadow(8px 12px 16px rgb(0 0 0 / 0.8));
-  }
-}
-@keyframes glow-scale-blobs-a {
-  from {
-    transform: none
-  }
-  to {
-    transform: scale(.98);
-    transform: translate(-10px, -10px);
-  }
-}
+/* Animation for '../assets/animatedBg.svg'*/
 @keyframes blur-sphere-a {
   from {
-    filter: blur(18px);
-  }
-  to {
     filter: blur(70px);
   }
-}
-@keyframes clouds-a {
-  from {
-    filter:drop-shadow(8px 10px 10px rgb(0 0 0 / 0.5));
-  }
   to {
-    filter: drop-shadow(8px 12px 16px rgb(0 0 0 / 0.8));
-    transform: translate(10px, 10px);
+    filter: blur(26px);
   }
-} 
+}
+/* Animation for '../assets/main_picture@3x.png'*/
+@keyframes make-visible-a {
+  from { 
+    opacity: 0
+   }
+  to { 
+    opacity: 1;
+  }
+}

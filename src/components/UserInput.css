@@ -24,7 +24,7 @@
     font-size: medium;
     border-radius: 18px;
 }
-.user-input__error-text {
+.user-input__error {
     margin-left: .5rem;
     height: 18px;
     font-size: smaller;

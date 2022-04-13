@@ -9,15 +9,14 @@ import './Project.css'
 function Project(props) {
   const { img, description, frontEnd, backEnd, feLink, beLink, pageLink, name } = props
   return (
-    
       <Card name={name}>
-          <div className="project__img"
+          <div className="project__bg"
             style={{ backgroundImage: `url(${img})` }}
           ></div>
-        <div className="project__description">
-          <div className="project__description--description">{description}</div>
+        <div className="project__info">
+          <div className="project__description">{description}</div>
           <TextSeparator/>
-          <div className="project__description--description">
+          <div className="project__description">
             <p>front-end: <br></br>{frontEnd}</p>
             <p>back-end: <br></br>{backEnd}</p>
             <TextSeparator/>
