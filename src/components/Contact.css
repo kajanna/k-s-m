@@ -1,6 +1,6 @@
-.contact__bg-image {
+.contact__bg {
     margin-top: -0.5rem;
-    background-image: url('../assets/projectsBG.svg');
+    background-image: url('../assets/section_bg@3x.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -13,16 +13,12 @@
 }
 
 @media (min-width: 750px) {
-    .contact__bg-image {
+    .contact__bg {
         padding: 12% 20%;
     }
 }
 @media (min-width: 986px) {
-    .contact__bg-image { 
+    .contact__bg { 
         padding: 4% 30%;
-    }
-    .contact__text {
-        font-size: 44px;
-        margin-bottom: 0.5em;
     }
 }

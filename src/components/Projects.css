@@ -1,5 +1,5 @@
 .my-projects {
-    background-image: url('../assets/projectsBG.svg');
+    background-image: url('../assets/section_bg@3x.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -12,14 +12,14 @@
     font-size: 40px;
     text-align: center;
 }
-.my-projects_projects {
+.my-projects__projects {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: fit-content;
 }
 @media (min-width: 986px) {
-    .my-projects_projects {
+    .my-projects__projects {
         align-items: center;    
 }
 }
@@ -27,7 +27,7 @@
     .my-projects {
         padding-top: 4rem 
     }
-    .my-projects_projects {
+    .my-projects__projects {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap; 

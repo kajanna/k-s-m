@@ -13,8 +13,7 @@ import SassLogo   from '../assets/technologiesLogos/sass_logo.png';
 
 import "./Skills.css";
 
-function Skills(props) {
-
+const Skills = () =>{
   const [ showSkills, setShowSkills ] = useState(false);
 
   useEffect(() => {
@@ -40,7 +39,7 @@ function Skills(props) {
   return (
     <section id="skills" className="skills">
       <div className="skills__header">
-        <div className="skills__header-text">Skills</div>
+        <div className="skills__text">Skills</div>
       </div>
       <div className="skills__logos">
         <div className={`skills__logo ${showSkills && " skills__logo-a"}`}>

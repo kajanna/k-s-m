@@ -1,20 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import Project from './Project'
-import myHome from '../assets/my_home_logo.svg';
-import meWant from '../assets/me_want_logo.svg';
-import myLibrary from '../assets/my_library_logo.svg';
+import Project from "./Project";
+import myHome from "../assets/my_home_logo.svg";
+import meWant from "../assets/me_want_logo.svg";
+import myLibrary from "../assets/my_library_logo.svg";
 
+import "./Projects.css";
 
-
-import './Projects.css'
-
-function MyProjects(props) {
+const MyProjects = () =>{
   return (
-    
     <section className="my-projects" id="projects">
-     <div className="my-projects__header">Projects</div>
-      <div className="my-projects_projects">
+      <div className="my-projects__header">Projects</div>
+      <div className="my-projects__projects">
         <Project
           img={myHome}
           key="#myHome"
@@ -46,10 +43,7 @@ function MyProjects(props) {
           beLink="https://github.com/kajanna/me-want-backend"
           pageLink="https://me-want.firebaseapp.com/"
         />
-        
-
       </div>
-
     </section>
   );
 }

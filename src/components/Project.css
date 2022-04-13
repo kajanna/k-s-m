@@ -1,23 +1,22 @@
-.project__img {
+.project__bg {
     background-repeat: no-repeat;
     height: 80px;
     width: 240px;
     margin: 2rem auto  1.2rem;
 }
-.project__description {   
+.project__info {   
     color: var(--darkgrey);
     margin:0;
     background-color: #fff;
     border-radius: 0 0 18px 18px;
     padding: 2rem;
 }
-.project__description--description {
+.project__description {
     text-align: center;
 }
 @media (min-width: 986px) {
-    .project__description {   
+    .project__info {   
         height: 350px;
     }
- 
 }
 
