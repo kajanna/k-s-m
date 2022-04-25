@@ -4,7 +4,6 @@ import "./AnimatedNavBar.css";
 
 const AnimatedNavBar = () => {
   const [showNavBar, setShowNavBar] = useState(false);
-
   const changeBackground = () => {
     if (window.scrollY >= 72) {
       setShowNavBar(true);
