@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./AnimatedNavBar.css";
 
-const AnimatedNavBar = (props) => {
+const AnimatedNavBar = () => {
   const [showNavBar, setShowNavBar] = useState(false);
 
   const changeBackground = () => {
