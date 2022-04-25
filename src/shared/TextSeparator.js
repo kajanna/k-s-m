@@ -2,7 +2,7 @@ import React from 'react';
 
 import './TextSeparator.css'
 
-function TextSeparator(props) {
+const TextSeparator = () => {
     return (
         <div className="text-separator">
             <div className="text-separator__element"></div>

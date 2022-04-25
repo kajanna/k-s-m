@@ -15,7 +15,7 @@ const About = () => {
       rootMargin: "0px",
       threshold: 0.9,
     };
-    function onScreen(entries) {
+    const onScreen = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setShowText(true);

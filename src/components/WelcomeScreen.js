@@ -1,15 +1,15 @@
-import React, { Suspense } from 'react';
+import React, { Suspense } from "react";
 
-import { Canvas } from '@react-three/fiber';
+import { Canvas } from "@react-three/fiber";
 
-import FlyingBlob from './FlyingBlob';
-import MainPicture from '../assets/main_picture@3x.png';
-import { ReactComponent as AnimatedBg} from '../assets/animatedBg.svg'
-import NavIcons from '../navigation/NavIcons'
+import FlyingBlob from "./FlyingBlob";
+import MainPicture from "../assets/main_picture@3x.png";
+import { ReactComponent as AnimatedBg } from "../assets/animatedBg.svg";
+import NavIcons from "../navigation/NavIcons";
 
-import './WelcomeScreen.css';
+import "./WelcomeScreen.css";
 
-const  WelcomeScreen = () => {
+const WelcomeScreen = () => {
   return (
     <div id="home" className="welcome">
       <div className="welcome__text">
@@ -86,6 +86,6 @@ const  WelcomeScreen = () => {
       </div>
     </div>
   );
-}
+};
 
 export default WelcomeScreen;

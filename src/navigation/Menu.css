@@ -1,6 +1,8 @@
 .menu {
     display: flex;
     flex-direction: column;
+    transform: translateX(300%);
+    animation: welcome__menu-a .5s ease-out forwards .5s; 
 }
 .menu li {
     list-style-type: none;

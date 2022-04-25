@@ -2,7 +2,7 @@ import React from 'react';
 
 import './LoadingAnimation.css';
 
-function LoadingAnimation(props) {
+const LoadingAnimation = () => {
   return (
     <div className="loadingAnimation">
       <div className="loadingAnimation__main">
