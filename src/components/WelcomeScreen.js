@@ -17,7 +17,7 @@ const WelcomeScreen = () => {
         <p>Junior React Developer</p>
       </div>
 
-      <img className="welcome__picture" src={MainPicture} />
+      <img className="welcome__picture" src={MainPicture} alt=""/>
       <div className="welcome__bg">
         <AnimatedBg />
       </div>
