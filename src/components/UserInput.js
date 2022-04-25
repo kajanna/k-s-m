@@ -4,7 +4,7 @@ import { useField } from "formik";
 
 import "./UserInput.css";
 
-function UserInput({ label, large, ...props }) {
+const UserInput = ({ label, large, ...props }) => {
   const [field, meta] = useField(props);
 
   const [didFocus, setDidFocus] = useState(false);
@@ -36,6 +36,6 @@ function UserInput({ label, large, ...props }) {
       </div>
     </div>
   );
-}
+};
 
 export default UserInput;

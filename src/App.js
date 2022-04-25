@@ -1,15 +1,15 @@
-import { Switch, Route, Redirect } from 'react-router-dom';
-import Skills from './components/Skills'
-import About from './components/About';
-import Projects from './components/Projects';
-import WelcomeScreen from './components/WelcomeScreen'
-import MainNavigation from './navigation/MainNavigation';
-import Contact from './components/Contact';
-import Footer from './navigation/Footer';
+import { Switch, Route, Redirect } from "react-router-dom";
+import Skills from "./components/Skills";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import WelcomeScreen from "./components/WelcomeScreen";
+import MainNavigation from "./navigation/MainNavigation";
+import Contact from "./components/Contact";
+import Footer from "./navigation/Footer";
 
-import './App.css';
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <Switch>
@@ -28,6 +28,6 @@ function App() {
       </Switch>
     </>
   );
-}
+};
 
 export default App;

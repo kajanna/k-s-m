@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Button.css'
 
-function Button(props) {
+const Button = (props) => {
     return (
         <button 
             type={props.type} 

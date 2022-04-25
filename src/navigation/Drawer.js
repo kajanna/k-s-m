@@ -1,24 +1,26 @@
-import React from 'react';
-import  { createPortal } from 'react-dom';
+import React from "react";
+import { createPortal } from "react-dom";
 
-import Menu from './Menu'
-import Backdrop from '../shared/Backdrop';
+import Menu from "./Menu";
+import Backdrop from "../shared/Backdrop";
 
-import './Drawer.css';
+import "./Drawer.css";
 
 const Drawer = (props) => {
-
-    return createPortal(
-        <>
-        <div className={props.showDrawer ? "drawer" : "drawer drawer--close"} onClick={props.onClose}>
-            <div className="drawer__menu">
-                <Menu />
-            </div>
+  return createPortal(
+    <>
+      <div
+        className={props.showDrawer ? "drawer" : "drawer drawer--close"}
+        onClick={props.onClose}
+      >
+        <div className="drawer__menu">
+          <Menu />
         </div>
-         <Backdrop closeBackdrop={props.onClose} showBackdrop={props.showDrawer}/>
-        </>, 
-        document.getElementById('drawer')
-        );
-}
+      </div>
+      <Backdrop closeBackdrop={props.onClose} showBackdrop={props.showDrawer} />
+    </>,
+    document.getElementById("drawer")
+  );
+};
 
 export default Drawer;

@@ -9,6 +9,8 @@
   padding-top: 7rem;
   text-align: center;
   color: #fff;
+  transform: translateX(-100%);
+  animation: welcome__text-a .5s ease-out forwards;
 }
 .welcome__text h2  {
   font-size: 2em;
@@ -87,13 +89,32 @@
     position: absolute;
     z-index: 6;
     right: 4rem;
-    top: 6rem
+    top: 6rem;
+    transform: translateX(300%);
+    animation: welcome__menu-a .5s ease-out forwards .8s; 
   }
 }
 
 @media (min-width: 1500px) {
   .welcome {
     padding-top: 0px;
+  }
+}
+/* Text Animation */
+@keyframes welcome__text-a {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes welcome__menu-a {
+  from {
+    transform: translateX(300%);
+  }
+  to {
+    transform: none;
   }
 }
 

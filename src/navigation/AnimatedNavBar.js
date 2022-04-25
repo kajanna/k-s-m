@@ -1,25 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import './AnimatedNavBar.css'
+import "./AnimatedNavBar.css";
 
-function AnimatedNavBar(props) {
-  
-  const [ showNavBar, setShowNavBar ] = useState(false);
-    
+const AnimatedNavBar = (props) => {
+  const [showNavBar, setShowNavBar] = useState(false);
+
   const changeBackground = () => {
-      if (window.scrollY >= 72) {
-        setShowNavBar(true);
-      } else {
-        setShowNavBar(false);
-      }
-      };
+    if (window.scrollY >= 72) {
+      setShowNavBar(true);
+    } else {
+      setShowNavBar(false);
+    }
+  };
 
-  window.addEventListener('scroll', changeBackground);
-  
-    return (
-      <div className={showNavBar ? "animated-nav-bar" : "animated-nav-bar animated-nav-bar--hidden"} >
-      </div>
-    );
-}
+  window.addEventListener("scroll", changeBackground);
+
+  return (
+    <div
+      className={
+        showNavBar
+          ? "animated-nav-bar"
+          : "animated-nav-bar animated-nav-bar--hidden"
+      }
+    ></div>
+  );
+};
 
 export default AnimatedNavBar;
