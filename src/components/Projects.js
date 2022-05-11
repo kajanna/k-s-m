@@ -5,6 +5,7 @@ import myHome from "../assets/my_home_logo.svg";
 import meWant from "../assets/me_want_logo.svg";
 import myLibrary from "../assets/my_library_logo.svg";
 import portfolio from "../assets/portfolio_logo.svg";
+import cats2budget from "../assets/2cats_logo.svg";
 
 import "./Projects.css";
 
@@ -14,14 +15,23 @@ const MyProjects = () =>{
       <div className="my-projects__header">Projects</div>
       <div className="my-projects__projects">
       <Project
+          img={cats2budget}
+          key="2catsbudget "
+          name="2catsbudget "
+          description="Budget app. It help track monthly expenses with a little help from 2 adorable cats."
+          frontEnd="React + TypeScript + Redux + GSAP + MaterialUI"
+          backEnd="Firebase"
+          feLink="https://github.com/kajanna/2catsbudget"
+        />
+      <Project
           img={portfolio}
           key="portfolio"
           name="portfolio"
           description="Portfolio site."
           frontEnd="React + THREE.js"
           backEnd="Node.js + Nodemailer"
-          feLink="https://github.com/kajanna/my-library"
-          beLink="https://github.com/kajanna/add-a-link"
+          feLink="https://github.com/kajanna/k-s-m"
+          beLink="https://github.com/kajanna/k-s-m-backend"
         />
       <Project
           img={myLibrary}
@@ -31,6 +41,7 @@ const MyProjects = () =>{
           frontEnd="React + TypeScript + SASS"
           backEnd="Firestorm -  Cloud Firestore"
           feLink="https://github.com/kajanna/my-library"
+          pageLink="https://mylibrary.pl/"
         />
         <Project
           img={myHome}
